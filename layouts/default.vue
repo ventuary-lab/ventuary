@@ -1,8 +1,8 @@
 <template>
   <div>
-    <header />
+    <Header />
     <nuxt />
-    <footer />
+    <Footer />
     <cookie />
   </div>
 </template>
@@ -16,8 +16,8 @@ export default {
   components: {
     Header,
     Footer,
-    Cookie,
-  },
+    Cookie
+  }
 };
 </script>
 
@@ -381,7 +381,7 @@ a,
     }
   }
 
-  &-eng {
+  &-en {
     @include before-img(block, 18px, 18px, r) {
       background-image: url("~static/img/icons/eng.svg");
       background-position: center;
@@ -389,7 +389,7 @@ a,
     }
   }
 
-  &-rus {
+  &-ru {
     @include before-img(block, 18px, 18px, r) {
       background-image: url("~static/img/icons/rus.svg");
       background-position: center;
@@ -584,12 +584,6 @@ a,
   font-family: "Syncopate", sans-serif;
   font-weight: normal;
 
-  &:hover {
-    .page-lang-select-list {
-      display: flex !important;
-    }
-  }
-
   .icon {
     &:before {
       margin-right: 6px;
@@ -599,7 +593,6 @@ a,
   &-select {
     &-list {
       position: absolute;
-      display: none;
       flex-direction: column;
       margin-top: 10px;
       background-color: rgba(18, 18, 25, 0.98);
@@ -611,10 +604,6 @@ a,
       left: 0px;
       min-width: 95px;
       z-index: 20;
-
-      &:hover {
-        display: flex !important;
-      }
 
       &-title {
         margin: 8px 0;
@@ -643,15 +632,15 @@ a,
       border-color: white;
       transform: rotate(135deg);
       position: absolute;
-      top: 4px;
-      right: -5px;
+      top: 13px;
+      right: 10px;
       transition: 0.2s ease;
     }
 
     &.opened {
       &:after {
         transform: rotate(-45deg);
-        top: 8px;
+        top: 16px;
       }
     }
   }

@@ -28,8 +28,8 @@
       div.footer-links
         div.lang.page-lang
           div.page-lang-select
-            span.icon.link.page-lang-selected(v-on:click="openedLngList = !openedLngList", v-bind:class="{ opened: openedLngList}", :class="'icon-' + currLanguage.symbol") {{ currLanguage.title }}
-            div.page-lang-select-list
+            span.icon.link.page-lang-selected(v-on:click="openedLngList = !openedLngList", v-bind:class="[{ opened: openedLngList }, 'icon-' + currLanguage.symbol ]") {{ currLanguage.title }}
+            div.page-lang-select-list(v-if="openedLngList")
               span.icon.link.page-lang-select-list-title(v-for="lng in languagesList", v-if="!lng['active']", v-on:click="setLanguage(lng)", :class="'icon-' + lng['lng']") {{ lng['title'] }}
         div.footer-social-links
           a(href="/").link-icon.icon.icon-facebook
@@ -185,7 +185,7 @@ footer {
         }
 
         &-select-list {
-          top: -175px;
+          top: -75px;
         }
       }
     }
