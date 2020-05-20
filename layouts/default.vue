@@ -3,18 +3,21 @@
     <header />
     <nuxt />
     <footer />
+    <cookie />
   </div>
 </template>
 
 <script>
 import Header from "~/components/index/Header.vue";
 import Footer from "~/components/index/Footer.vue";
+import Cookie from "~/components/index/Cookie.vue";
 
 export default {
   components: {
     Header,
-    Footer
-  }
+    Footer,
+    Cookie,
+  },
 };
 </script>
 
@@ -654,4 +657,3 @@ a,
   }
 }
 </style>
-
