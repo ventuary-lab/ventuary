@@ -20,12 +20,12 @@
     .container {
       max-width: 920px;
       padding: 70px 20px 40px 20px;
-      background: url(../img/header-points.svg),
-        url(../img/header-lines.svg) no-repeat right center/contain;
+      background: url("~static/img/header-points.svg"),
+        url("~static/img/header-lines.svg") no-repeat right center/contain;
 
       @include b(mobile) {
         padding: 40px 20px 30px 20px;
-        background: url(../img/header-lines.svg);
+        background: url("~static/img/header-lines.svg");
         background-position: 0 -20px;
         background-repeat: no-repeat;
         background-size: contain;
