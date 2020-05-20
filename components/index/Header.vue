@@ -1,6 +1,6 @@
 <template lang="pug">
   header(v-bind:class="{ 'header-fixed' : fixHeader }")
-    .header
+    div.header
       span.logo.logo-hd.header-logo
       div.header-wrap(v-bind:class="{ 'header-menu-show': menuOpen }")
         div.btn-close
