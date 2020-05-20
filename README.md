@@ -1,4 +1,4 @@
-# ventuary-site
+# ventuary
 
 > ventuary landing
 
