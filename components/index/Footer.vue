@@ -90,6 +90,7 @@ export default {
 <style lang="scss" scoped>
 @import "../../assets/scss/mixins/media.scss";
 @import "../../assets/scss/mixins/main.scss";
+@import "../../assets/scss/mixins/image.scss";
 
 footer {
   margin-bottom: 50px;

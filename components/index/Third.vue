@@ -12,6 +12,7 @@
 
 <style lang="scss" scoped>
 @import "../../assets/scss/mixins/media.scss";
+@import "../../assets/scss/mixins/main.scss";
 
 .section {
   &-third {
