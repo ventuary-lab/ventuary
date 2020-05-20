@@ -17,19 +17,18 @@
             div.page-lang-select-list(v-if="openedLngList")
               span.icon.link.page-lang-select-list-title(v-for="lng in languagesList", v-if="!lng['active']", v-on:click="setLanguage(lng)", :class="'icon-' + lng['lng']") {{ lng['title'] }}
         div.header-footer
-          div.footer-links
-            div.footer-social-links
-              a(href="/").link-icon.icon.icon-facebook
-              a(href="/").link-icon.icon.icon-medium
-              a(href="/").link-icon.icon.icon-twitter
-              a(href="/").link-icon.icon.icon-linkedin
-              a(href="/").link-icon.icon.icon-youtube
-              a(href="/").link-icon.icon.icon-discord
-              a(href="/").link-icon.icon.icon-reddit
-              a(href="/").link-icon.icon.icon-github
-            span.logo-ft
-            a(href='mailto:info@venlab.dev').link.footer-email info@venlab.dev
-            p.text.copyrate ©2020 Ventuary Lab Corporation Inc. All rights reserved.
+          div.footer-social-links
+            a(href="/").link-icon.icon.icon-facebook
+            a(href="/").link-icon.icon.icon-medium
+            a(href="/").link-icon.icon.icon-twitter
+            a(href="/").link-icon.icon.icon-linkedin
+            a(href="/").link-icon.icon.icon-youtube
+            a(href="/").link-icon.icon.icon-discord
+            a(href="/").link-icon.icon.icon-reddit
+            a(href="/").link-icon.icon.icon-github
+          span.logo-ft
+          a(href='mailto:info@venlab.dev').link.footer-email info@venlab.dev
+          p.text.copyrate ©2020 Ventuary Lab Corporation Inc. All rights reserved.
       div.header-menu-toggle(v-on:click="menuOpen = !menuOpen")
           span.header-menu-toggle-line
           span.header-menu-toggle-line
@@ -213,6 +212,10 @@ header {
 
       @include b(mobile) {
         display: block;
+        margin-top: 20px;
+      }
+
+      .logo-ft {
         margin-top: 30px;
       }
 
