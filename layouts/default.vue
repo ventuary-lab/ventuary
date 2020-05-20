@@ -635,6 +635,10 @@ a,
       top: 13px;
       right: 10px;
       transition: 0.2s ease;
+
+      @include b(mobile) {
+        display: none;
+      }
     }
 
     &.opened {
