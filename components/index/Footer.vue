@@ -28,9 +28,9 @@
       div.footer-links
         div.lang.page-lang
           div.page-lang-select
-            span.icon.link.page-lang-selected(v-on:click="openedLngList = !openedLngList", v-bind:class="{ opened: openedLngList, 'icon-' + currLanguage.symbol: true }") {{ currLanguage.title }}
+            span.icon.link.page-lang-selected(v-on:click="openedLngList = !openedLngList", v-bind:class="{ opened: openedLngList}", :class="'icon-' + currLanguage.symbol") {{ currLanguage.title }}
             div.page-lang-select-list
-              span.icon.link.page-lang-select-list-title(v-for="lng in languagesList", v-if="!lng['active']", v-on:click="setLanguage(lng)", v-bind:class="{ 'icon-' + lng['lng']: true }") {{ lng['title'] }}
+              span.icon.link.page-lang-select-list-title(v-for="lng in languagesList", v-if="!lng['active']", v-on:click="setLanguage(lng)", :class="'icon-' + lng['lng']") {{ lng['title'] }}
         div.footer-social-links
           a(href="/").link-icon.icon.icon-facebook
           a(href="/").link-icon.icon.icon-medium
