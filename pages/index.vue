@@ -1,12 +1,12 @@
 <template>
   <div>
-    <HeaderBlock />
-    <First />
-    <Second />
-    <Third />
-    <Four />
-    <Five />
-    <Six />
+    <header-block />
+    <first />
+    <second />
+    <third />
+    <four />
+    <five />
+    <six />
   </div>
 </template>
 
@@ -27,7 +27,7 @@ export default {
     Third,
     Four,
     Five,
-    Six,
-  },
+    Six
+  }
 };
 </script>
