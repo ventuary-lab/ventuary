@@ -89,7 +89,7 @@
 
       &:nth-child(3) {
         .section-first-item-img {
-          background-image: url("~static/img/points.svg"),
+          background: url("~static/img/points.svg"),
             url("~static/img/smart.svg") no-repeat center/40%;
 
           @include b(tablet) {
@@ -104,7 +104,7 @@
         }
 
         .section-first-item-img {
-          background-image: url("~static/img/points.svg"),
+          background: url("~static/img/points.svg"),
             url("~static/img/deployment.svg") no-repeat center/40%;
 
           @include b(tablet) {

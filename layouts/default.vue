@@ -275,13 +275,13 @@ a,
   display: block;
 
   &-hd {
-    background-image: url("~static/img/logo-hd.svg") no-repeat center/contain;
+    background: url("~static/img/logo-hd.svg") no-repeat center/contain;
     width: 80px;
     height: 30px;
   }
 
   &-ft {
-    background-image: url("~static/img/logo-ft.svg");
+    background: url("~static/img/logo-ft.svg");
     width: 105px;
     height: 64px;
     display: flex;

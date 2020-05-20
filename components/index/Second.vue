@@ -102,7 +102,7 @@
 
       &:nth-child(3) {
         .section-second-item-img {
-          background-image: url("~static/img/neutrino-product.png") no-repeat
+          background: url("~static/img/neutrino-product.png") no-repeat
             center/contain;
 
           @include b(tablet) {
@@ -114,8 +114,8 @@
 
       &:nth-child(4) {
         .section-second-item-img {
-          background-image: url("~static/img/ventuary-dao-product.png")
-            no-repeat center/contain;
+          background: url("~static/img/ventuary-dao-product.png") no-repeat
+            center/contain;
 
           @include b(tablet) {
             background: url("~static/img/ventuary-dao-product-mob.png")
@@ -126,7 +126,7 @@
 
       &:nth-child(5) {
         .section-second-item-img {
-          background-image: url("~static/img/susy-product.png") no-repeat
+          background: url("~static/img/susy-product.png") no-repeat
             center/contain;
 
           @include b(tablet) {
@@ -142,7 +142,7 @@
         }
 
         .section-second-item-img {
-          background-image: url("~static/img/web3-product.png") no-repeat
+          background: url("~static/img/web3-product.png") no-repeat
             center/contain;
 
           @include b(tablet) {
