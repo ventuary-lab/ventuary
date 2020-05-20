@@ -1,78 +1,78 @@
 <template lang="pug">
   header(v-bind:class="{ 'header-fixed' : fixHeader }")
-  .header
-    span.logo.logo-hd.header-logo
-    div.header-wrap(v-bind:class="{ 'header-menu-show': menuOpen }")
-      div.btn-close
-        span.btn-close-item
-        span.btn-close-item
-      div.header-menu(v-on:click="menuOpen = false")
-        a.link.header-menu-link.active company
-        a.link.header-menu-link products
-        a.link.header-menu-link news
-        a.link.header-menu-link contacts
-      div.lang.page-lang
-        div.page-lang-select
-          span.icon.link.page-lang-selected(v-on:click="openedLngList = !openedLngList", v-bind:class="{ opened: openedLngList, 'icon-' + currLanguage.symbol: true }") {{ currLanguage.title }}
-          div.page-lang-select-list
-            span.icon.link.page-lang-select-list-title(v-for="lng in languagesList", v-if="!lng['active']", v-on:click="setLanguage(lng)", v-bind:class="{ 'icon-' + lng['lng']: true }") {{ lng['title'] }}
-      div.header-footer
-        div.footer-links
-          div.footer-social-links
-            a(href="/").link-icon.icon.icon-facebook
-            a(href="/").link-icon.icon.icon-medium
-            a(href="/").link-icon.icon.icon-twitter
-            a(href="/").link-icon.icon.icon-linkedin
-            a(href="/").link-icon.icon.icon-youtube
-            a(href="/").link-icon.icon.icon-discord
-            a(href="/").link-icon.icon.icon-reddit
-            a(href="/").link-icon.icon.icon-github
-          span.logo-ft
-          a(href='mailto:info@venlab.dev').link.footer-email info@venlab.dev
-          p.text.copyrate ©2020 Ventuary Lab Corporation Inc. All rights reserved.
-    div.header-menu-toggle(v-on:click="menuOpen = !menuOpen")
-        span.header-menu-toggle-line
-        span.header-menu-toggle-line
-        span.header-menu-toggle-line
+    .header
+      span.logo.logo-hd.header-logo
+      div.header-wrap(v-bind:class="{ 'header-menu-show': menuOpen }")
+        div.btn-close
+          span.btn-close-item
+          span.btn-close-item
+        div.header-menu(v-on:click="menuOpen = false")
+          a.link.header-menu-link.active company
+          a.link.header-menu-link products
+          a.link.header-menu-link news
+          a.link.header-menu-link contacts
+        div.lang.page-lang
+          div.page-lang-select
+            span.icon.link.page-lang-selected(v-on:click="openedLngList = !openedLngList", v-bind:class="{ opened: openedLngList, 'icon-' + currLanguage.symbol: true }") {{ currLanguage.title }}
+            div.page-lang-select-list
+              span.icon.link.page-lang-select-list-title(v-for="lng in languagesList", v-if="!lng['active']", v-on:click="setLanguage(lng)", v-bind:class="{ 'icon-' + lng['lng']: true }") {{ lng['title'] }}
+        div.header-footer
+          div.footer-links
+            div.footer-social-links
+              a(href="/").link-icon.icon.icon-facebook
+              a(href="/").link-icon.icon.icon-medium
+              a(href="/").link-icon.icon.icon-twitter
+              a(href="/").link-icon.icon.icon-linkedin
+              a(href="/").link-icon.icon.icon-youtube
+              a(href="/").link-icon.icon.icon-discord
+              a(href="/").link-icon.icon.icon-reddit
+              a(href="/").link-icon.icon.icon-github
+            span.logo-ft
+            a(href='mailto:info@venlab.dev').link.footer-email info@venlab.dev
+            p.text.copyrate ©2020 Ventuary Lab Corporation Inc. All rights reserved.
+      div.header-menu-toggle(v-on:click="menuOpen = !menuOpen")
+          span.header-menu-toggle-line
+          span.header-menu-toggle-line
+          span.header-menu-toggle-line
 </template>
 
 <script>
 export default {
-  data: function () {
+  data: function() {
     return {
       fixHeader: false,
       menuOpen: false,
       currLanguage: {
         title: "Eng",
-        symbol: "en",
+        symbol: "en"
       },
       openedLngList: false,
       languagesList: [
         {
           lng: "en",
           title: "Eng",
-          active: true,
+          active: true
         },
         {
           lng: "ru",
           title: "Rus",
-          active: false,
-        },
-      ],
+          active: false
+        }
+      ]
     };
   },
   mounted() {
-    window.addEventListener("scroll", (event) => {
+    window.addEventListener("scroll", event => {
       window.scrollY > 60 ? (this.fixHeader = true) : (this.fixHeader = false);
     });
   },
   methods: {
-    setLanguage: function (event) {
+    setLanguage: function(event) {
       this.currLanguage.title = event["title"];
       this.currLanguage.symbol = event["lng"];
       this.openedLngList = false;
 
-      this.languagesList.map((lang) => {
+      this.languagesList.map(lang => {
         if (lang["lng"] === event["lng"]) {
           lang["active"] = true;
         } else {
@@ -82,8 +82,8 @@ export default {
       this.languagesList.sort((a, b) => {
         return b.active ? 1 : -1;
       });
-    },
-  },
+    }
+  }
 };
 </script>
 
