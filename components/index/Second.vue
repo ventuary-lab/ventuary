@@ -90,8 +90,9 @@
 
       &:nth-child(2) {
         .section-second-item-img {
-          background: url("~static/img/gravity-hub-products.png") no-repeat
-            center/contain;
+          background: url("~static/img/gravity-product-logo.svg") no-repeat
+              center/30%,
+            url("~static/img/gh-product.png") no-repeat center/contain;
 
           @include b(tablet) {
             background: url("~static/img/gravity-hub-products-mob.png")
@@ -102,8 +103,9 @@
 
       &:nth-child(3) {
         .section-second-item-img {
-          background: url("~static/img/neutrino-product.png") no-repeat
-            center/contain;
+          background: url("~static/img/neutrino-product-logo.svg") no-repeat
+              center/50%,
+            url("~static/img/neutrino-product.png") no-repeat center/contain;
 
           @include b(tablet) {
             background: url("~static/img/neutrino-product-mob.png") no-repeat
@@ -114,8 +116,9 @@
 
       &:nth-child(4) {
         .section-second-item-img {
-          background: url("~static/img/ventuary-dao-product.png") no-repeat
-            center/contain;
+          background: url("~static/img/dao-product-logo.svg") no-repeat
+              center/30%,
+            url("~static/img/dao-product.png") no-repeat center/contain;
 
           @include b(tablet) {
             background: url("~static/img/ventuary-dao-product-mob.png")
@@ -126,8 +129,9 @@
 
       &:nth-child(5) {
         .section-second-item-img {
-          background: url("~static/img/susy-product.png") no-repeat
-            center/contain;
+          background: url("~static/img/susy-product-logo.svg") no-repeat
+              center/30%,
+            url("~static/img/susy-product.png") no-repeat center/contain;
 
           @include b(tablet) {
             background: url("~static/img/susy-product-mob.png") no-repeat
@@ -142,8 +146,9 @@
         }
 
         .section-second-item-img {
-          background: url("~static/img/web3-product.png") no-repeat
-            center/contain;
+          background: url("~static/img/web3-product-logo.svg") no-repeat
+              center/30%,
+            url("~static/img/web3-product.png") no-repeat center/contain;
 
           @include b(tablet) {
             background: url("~static/img/web3-product-mob.png") no-repeat
