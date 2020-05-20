@@ -3,10 +3,10 @@
     div.header
       span.logo.logo-hd.header-logo
       div.header-wrap(v-bind:class="{ 'header-menu-show': menuOpen }")
-        div.btn-close
+        div.btn-close(v-on:click="menuOpen = false")
           span.btn-close-item
           span.btn-close-item
-        div.header-menu(v-on:click="menuOpen = false")
+        div.header-menu
           a.link.header-menu-link.active company
           a.link.header-menu-link products
           a.link.header-menu-link news
