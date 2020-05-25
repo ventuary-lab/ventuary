@@ -6,11 +6,11 @@
       div.footer-menu
         div.footer-menu-item
           span.footer-menu-title Products
-          a(href='/').link GravityHub
-          a(href='/').link SuSy
-          a(href='/').link Neutrino
-          a(href='/').link Ventuary-DAO
-          a(href='/').link Mastering Web 3.0
+          a(href='https://gravityhub.org').link GravityHub
+          a(href='https://susy.one').link SuSy
+          a(href='https://neutrino.at').link Neutrino
+          a(href='https://beta.ventuary.space/').link Ventuary-DAO
+          a(href='https://stepik.org/course/54415/promo#toc').link Mastering Web 3.0
         div.footer-menu-item
           span.footer-menu-title Company
           a(href='/').link About
@@ -32,12 +32,12 @@
             div.page-lang-select-list(v-if="openedLngList")
               span.icon.link.page-lang-select-list-title(v-for="lng in languagesList", v-if="!lng['active']", v-on:click="setLanguage(lng)", :class="'icon-' + lng['lng']") {{ lng['title'] }}
         div.footer-social-links
-          a(href="/").link-icon.icon.icon-facebook
-          a(href="/").link-icon.icon.icon-medium
-          a(href="/").link-icon.icon.icon-twitter
-          a(href="/").link-icon.icon.icon-linkedin
-          a(href="/").link-icon.icon.icon-youtube
-          a(href="/").link-icon.icon.icon-discord
+          a(href="https://www.facebook.com/@Venlab.dev").link-icon.icon.icon-facebook
+          a(href="https://medium.com/@Venlab.dev").link-icon.icon.icon-medium
+          a(href="https://twitter.com/VenlabDev").link-icon.icon.icon-twitter
+          a(href="https://www.linkedin.com/company/venlab-dev").link-icon.icon.icon-linkedin
+          a(href="https://www.youtube.com/channel/UCEaZKrRGp0TmTWZN9OOJuzw").link-icon.icon.icon-youtube
+          a(href="https://discord.gg/nzghQ3").link-icon.icon.icon-discord
           a(href="/").link-icon.icon.icon-reddit
           a(href="/").link-icon.icon.icon-github
       p.text.copyrate ©2020 Ventuary Lab Corporation Inc. All rights reserved.

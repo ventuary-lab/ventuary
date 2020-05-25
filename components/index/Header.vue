@@ -18,12 +18,12 @@
               span.icon.link.page-lang-select-list-title(v-for="lng in languagesList", v-if="!lng['active']", v-on:click="setLanguage(lng)", :class="'icon-' + lng['lng']") {{ lng['title'] }}
         div.header-footer
           div.footer-social-links
-            a(href="/").link-icon.icon.icon-facebook
-            a(href="/").link-icon.icon.icon-medium
-            a(href="/").link-icon.icon.icon-twitter
-            a(href="/").link-icon.icon.icon-linkedin
-            a(href="/").link-icon.icon.icon-youtube
-            a(href="/").link-icon.icon.icon-discord
+            a(href="https://www.facebook.com/@Venlab.dev").link-icon.icon.icon-facebook
+            a(href="https://medium.com/@Venlab.dev").link-icon.icon.icon-medium
+            a(href="https://twitter.com/VenlabDev").link-icon.icon.icon-twitter
+            a(href="https://www.linkedin.com/company/venlab-dev").link-icon.icon.icon-linkedin
+            a(href="https://www.youtube.com/channel/UCEaZKrRGp0TmTWZN9OOJuzw").link-icon.icon.icon-youtube
+            a(href="https://discord.gg/nzghQ3").link-icon.icon.icon-discord
             a(href="/").link-icon.icon.icon-reddit
             a(href="/").link-icon.icon.icon-github
           span.logo-ft

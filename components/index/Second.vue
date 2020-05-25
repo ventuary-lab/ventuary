@@ -5,7 +5,7 @@
       div.section-second-item.item-duo
         div.section-second-item-img
         div.section-second-item-info
-          a.link.title.title-text.icon.icon-circle-arrow-brown GH
+          a(href="https://gravityhub.org").link.title.title-text.icon.icon-circle-arrow-brown GH
           div.section-second-item-info-wrap
             div.section-second-item-info-content
               p.text Gravity Hub is the only all-encompassing, blockchain-agnostic oracle system that supports the communication of blockchains with the outside world, cross-chain communication, and integration of sidechains, within a single unified structure.
@@ -14,23 +14,23 @@
       div.section-second-item.item-reverce
         div.section-second-item-img
         div.section-second-item-info
-          a.link.title.title-text.icon.icon-circle-arrow-purple Neutrino Protocol
+          a(href="https://neutrino.at").link.title.title-text.icon.icon-circle-arrow-purple Neutrino Protocol
           p.text Neutrino Protocol is an algorithmic price-stable cryptocurrency protocol backed by Waves Platform’s native token.
           p.text The Protocol allows for the creation of stablecoins tied to a specific real world asset, such as national currency or commodity. The first synthetic asset created with Neutrino Protocol is USD Neutrino (USDN).
       div.section-second-item
         div.section-second-item-img
         div.section-second-item-info
-          a.link.title.title-text.icon.icon-circle-arrow-green Ventuary DAO
+          a(href="https://beta.ventuary.space/").link.title.title-text.icon.icon-circle-arrow-green Ventuary DAO
           p.text Ventuary DAO is the first decentralized autonomous organization on the Waves Platform, designed to leverage the wisdom of the crowds and patronage of grant makers to benefit innovators and community.
       div.section-second-item.item-reverce
         div.section-second-item-img
         div.section-second-item-info
-          a.link.title.title-text.icon.icon-circle-arrow-aqua SuSy
+          a(href="https://susy.one").link.title.title-text.icon.icon-circle-arrow-aqua SuSy
           p.text SuSy (SuperSymmetry) is a service for cross-chain communication & data provision.
       div.section-second-item.item-duo
         div.section-second-item-img
         div.section-second-item-info
-          a.link.title.title-text.icon.icon-circle-arrow-blue Mastering Web 3.0
+          a(href="https://stepik.org/course/54415/promo#toc").link.title.title-text.icon.icon-circle-arrow-blue Mastering Web 3.0
           div.section-second-item-info-wrap
             div.section-second-item-info-content
               p.text Mastering Web 3.0” is a popular MOOC for developers of new decentralized technologies, built in collaboration with Waves DevRel department.
