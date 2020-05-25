@@ -1,6 +1,6 @@
 <template lang="pug">
-  section.section.section-six
-    .container#get-in-touch
+  section.section.section-six#get-in-touch
+    .container
       h2.title.title-lg Get in touch
       div.form-block
         form

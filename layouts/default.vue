@@ -3,7 +3,7 @@
     <Header />
     <nuxt />
     <Footer />
-    <cookie />
+    <Cookie />
   </div>
 </template>
 

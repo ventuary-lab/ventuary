@@ -1,6 +1,6 @@
 <template lang="pug">
-  section.section.section-first
-    .container#what-we-do
+  section.section.section-first#what-we-do
+    .container
       h2.title.title-lg What we do
       div.section-first-item
         div.section-first-item-img

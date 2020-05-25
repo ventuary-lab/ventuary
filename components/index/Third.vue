@@ -1,6 +1,6 @@
 <template lang="pug">
-  section.section.section-third
-    .container#tools
+  section.section.section-third#tools
+    .container
       h2.title.title-lg.title-bg Technology<br> and Tools we use
       div.section-third-items
         span.icon.icon-waves-2 Waves

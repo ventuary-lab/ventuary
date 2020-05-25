@@ -1,6 +1,6 @@
 <template lang="pug">
-  section.section.section-second
-    div.container#products
+  section.section.section-second#products
+    div.container
       h2.title.title-lg.title-bg Products
       div.section-second-item.item-duo
         div.section-second-item-img

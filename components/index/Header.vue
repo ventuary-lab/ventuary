@@ -6,11 +6,11 @@
         div.btn-close(v-on:click="menuOpen = false")
           span.btn-close-item
           span.btn-close-item
-        div.header-menu
-          a.link.header-menu-link.active company
-          a.link.header-menu-link products
-          a.link.header-menu-link news
-          a.link.header-menu-link contacts
+        scrollactive(active-class="active", :offset="80", :duration="800", bezier-easing-value=".5,0,.35,1").header-menu
+          a(href='#what-we-do').link.header-menu-link.scrollactive-item company
+          a(href='#products').link.header-menu-link.scrollactive-item products
+          a(href='#news').link.header-menu-link.scrollactive-item news
+          a(href='#get-in-touch').link.header-menu-link.scrollactive-item contacts
         div.lang.page-lang
           div.page-lang-select
             span.icon.link.page-lang-selected(v-on:click="openedLngList = !openedLngList", :class="[ { opened: openedLngList } ,'icon-' + currLanguage.symbol ]") {{ currLanguage.title }}

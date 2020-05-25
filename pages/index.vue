@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="landing-content">
     <header-block />
     <first />
     <second />
