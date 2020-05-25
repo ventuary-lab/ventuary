@@ -65,9 +65,9 @@ export default {
 
 :root {
   --color-bg: #0f0d12;
-  --color-title: #929292;
-  --color-text: #929292;
-  --color-link: #929292;
+  --color-title: #d7d7d7;
+  --color-text: #d7d7d7;
+  --color-link: #d7d7d7;
   --color-link-hover: #fff;
   --color-orange: #ff8e1e;
   --color-orange-accent: #e17f1d;
