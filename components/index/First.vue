@@ -2,6 +2,11 @@
 section#what-we-do.section.section-first
   .container
     h2.title.title-lg What we do
+    .section-first-item.item-reverce
+      .section-first-item-img
+      .section-first-item-info
+        span.title.title-text Ideation and Lean <br> Innovation
+        p.text We constantly generate and vet ideas to turn them into design prototypes, with a focus on product-market fit. We approach ideation based on how to best apply decentralized solutions in solving real problems of consumers and entire industries.
     .section-first-item
       .section-first-item-img
       .section-first-item-info
@@ -73,8 +78,17 @@ section#what-we-do.section.section-first
         grid-template-areas: "img" "info";
         height: auto;
       }
-
       &:nth-child(2) {
+        .section-first-item-img {
+          background: url("~static/img/points.svg"),
+            url("~static/img/innovation_pic.svg") no-repeat center/40%;
+
+          @include b(tablet) {
+            background: url("~static/img/technology.svg") no-repeat left/contain;
+          }
+        }
+      }
+      &:nth-child(3) {
         .section-first-item-img {
           background: url("~static/img/points.svg"),
             url("~static/img/technology.svg") no-repeat center/40%;
@@ -85,7 +99,7 @@ section#what-we-do.section.section-first
         }
       }
 
-      &:nth-child(3) {
+      &:nth-child(4) {
         .section-first-item-img {
           background: url("~static/img/points.svg"),
             url("~static/img/smart.svg") no-repeat center/40%;
@@ -96,7 +110,7 @@ section#what-we-do.section.section-first
         }
       }
 
-      &:nth-child(4) {
+      &:nth-child(5) {
         @include b(tablet) {
           margin-bottom: 0;
         }
