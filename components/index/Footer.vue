@@ -1,78 +1,86 @@
 <template lang="pug">
-  footer
-    div.container
-      span.logo-ft
-      a(href='mailto:info@venlab.dev').link.footer-email info@venlab.dev
-      div.footer-menu
-        div.footer-menu-item
-          span.footer-menu-title Products
-          a(href='https://gravityhub.org').link GravityHub
-          a(href='https://susy.one').link SuSy
-          a(href='https://neutrino.at').link Neutrino
-          a(href='https://beta.ventuary.space/').link Ventuary-DAO
-          a(href='https://stepik.org/course/54415/promo#toc').link Mastering Web 3.0
-        div.footer-menu-item
-          span.footer-menu-title Company
-          a(href='/').link About
-          a(href='/').link Research
-          a(href='/').link Contacts
-        div.footer-menu-item
-          span.footer-menu-title News
-          a(href='/').link Blog
-          a(href='/').link Press Releases
-          a(href='/').link Brand Assets
-        div.footer-menu-item
-          span.footer-menu-title Developers
-          a(href='/').link Documentation
-          a(href='/').link Whitepapers
-      div.footer-links
-        div.lang.page-lang
-          div.page-lang-select
-            span.icon.link.page-lang-selected(v-on:click="openedLngList = !openedLngList", v-bind:class="[{ opened: openedLngList }, 'icon-' + currLanguage.symbol ]") {{ currLanguage.title }}
-            div.page-lang-select-list(v-if="openedLngList")
-              span.icon.link.page-lang-select-list-title(v-for="lng in languagesList", v-if="!lng['active']", v-on:click="setLanguage(lng)", :class="'icon-' + lng['lng']") {{ lng['title'] }}
-        div.footer-social-links
-          a(href="https://www.facebook.com/@Venlab.dev").link-icon.icon.icon-facebook
-          a(href="https://medium.com/@Venlab.dev").link-icon.icon.icon-medium
-          a(href="https://twitter.com/VenlabDev").link-icon.icon.icon-twitter
-          a(href="https://www.linkedin.com/company/venlab-dev").link-icon.icon.icon-linkedin
-          a(href="https://www.youtube.com/channel/UCEaZKrRGp0TmTWZN9OOJuzw").link-icon.icon.icon-youtube
-          a(href="https://discord.gg/nzghQ3").link-icon.icon.icon-discord
-          a(href="/").link-icon.icon.icon-reddit
-          a(href="/").link-icon.icon.icon-github
-      p.text.copyrate ©2020 Ventuary Lab Corporation Inc. All rights reserved.
+footer
+  .container
+    span.logo-ft
+    a.link.footer-email(href="mailto:info@venlab.dev") info@venlab.dev
+    .footer-menu
+      .footer-menu-item
+        span.footer-menu-title Products
+        a.link(href="https://gravityhub.org") GravityHub
+        a.link(href="https://susy.one") SuSy
+        a.link(href="https://neutrino.at") Neutrino
+        a.link(href="https://beta.ventuary.space") Ventuary-DAO
+        a.link(href="https://stepik.org/course/54415/promo#toc") Mastering Web 3.0
+      .footer-menu-item
+        span.footer-menu-title News
+        a.link(href="https://medium.com/@Venlab.dev") Blog
+        a.link(href="/") Brand Assets
+      .footer-menu-item
+        span.footer-menu-title Developers
+        a.link(href="/") Whitepapers
+        a.link(href="/") GitHub
+    .footer-links
+      .lang.page-lang
+        .page-lang-select
+          span.icon.link.page-lang-selected(
+            v-on:click="openedLngList = !openedLngList",
+            v-bind:class="[{ opened: openedLngList }, 'icon-' + currLanguage.symbol]"
+          ) {{ currLanguage.title }}
+          .page-lang-select-list(v-if="openedLngList")
+            span.icon.link.page-lang-select-list-title(
+              v-for="lng in languagesList",
+              v-if="!lng['active']",
+              v-on:click="setLanguage(lng)",
+              :class="'icon-' + lng['lng']"
+            ) {{ lng['title'] }}
+      .footer-social-links
+        a.link-icon.icon.icon-facebook(
+          href="https://www.facebook.com/@Venlab.dev"
+        )
+        a.link-icon.icon.icon-medium(href="https://medium.com/@Venlab.dev")
+        a.link-icon.icon.icon-twitter(href="https://twitter.com/VenlabDev")
+        a.link-icon.icon.icon-linkedin(
+          href="https://www.linkedin.com/company/venlab-dev"
+        )
+        a.link-icon.icon.icon-youtube(
+          href="https://www.youtube.com/channel/UCEaZKrRGp0TmTWZN9OOJuzw"
+        )
+        a.link-icon.icon.icon-discord(href="https://discord.gg/nzghQ3")
+        a.link-icon.icon.icon-reddit(href="/")
+        a.link-icon.icon.icon-github(href="/")
+    p.text.copyrate ©2020 Ventuary Lab Corporation Inc. All rights reserved.
 </template>
 
 <script>
 export default {
-  data: function() {
+  data: function () {
     return {
       currLanguage: {
         title: "Eng",
-        symbol: "en"
+        symbol: "en",
       },
       openedLngList: false,
       languagesList: [
         {
           lng: "en",
           title: "Eng",
-          active: true
+          active: true,
         },
         {
           lng: "ru",
           title: "Rus",
-          active: false
-        }
-      ]
+          active: false,
+        },
+      ],
     };
   },
   methods: {
-    setLanguage: function(event) {
+    setLanguage: function (event) {
       this.currLanguage.title = event["title"];
       this.currLanguage.symbol = event["lng"];
       this.openedLngList = false;
 
-      this.languagesList.map(lang => {
+      this.languagesList.map((lang) => {
         if (lang["lng"] === event["lng"]) {
           lang["active"] = true;
         } else {
@@ -82,8 +90,8 @@ export default {
       this.languagesList.sort((a, b) => {
         return b.active ? 1 : -1;
       });
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -180,6 +188,7 @@ footer {
       }
 
       .page-lang {
+        visibility: hidden;
         @include b(mobile) {
           display: none;
         }

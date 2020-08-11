@@ -1,24 +1,27 @@
 <template lang="pug">
-  section.section.section-first#what-we-do
-    .container
-      h2.title.title-lg What we do
-      div.section-first-item
-        div.section-first-item-img
-        div.section-first-item-info
-          span.title.title-text Technology research <br> and prototyping
-          p.text With a profound expertise across various fields of blockchain technology,
-          p.text We design and prototype highly innovative and reliable decentralized architectures with speed and precision.
-      div.section-first-item.item-reverce
-        div.section-first-item-img
-        div.section-first-item-info
-          span.title.title-text Smart Contract and dApps <br> Development
-          p.text We apply our versatile skill set to solving real-world use cases to increase the adoption of blockchain globally.
-      div.section-first-item
-        div.section-first-item-img
-        div.section-first-item-info
-          span.title.title-text Deployment <br>and Maintenance
-          p.text Our open-source products are designed to sustain high loads, with a focus on ease-of-use and flexibility or developers and end users.
-
+section#what-we-do.section.section-first
+  .container
+    h2.title.title-lg What we do
+    .section-first-item.item-reverce
+      .section-first-item-img
+      .section-first-item-info
+        span.title.title-text Ideation and Lean <br> Innovation
+        p.text We constantly generate and vet ideas to turn them into design prototypes, with a focus on product-market fit. We approach ideation based on how to best apply decentralized solutions in solving real problems of consumers and entire industries.
+    .section-first-item
+      .section-first-item-img
+      .section-first-item-info
+        span.title.title-text Technology research <br> and prototyping
+        p.text With a profound expertise across various fields of blockchain technology, we design and prototype highly innovative and reliable decentralized architectures with speed and precision.
+    .section-first-item.item-reverce
+      .section-first-item-img
+      .section-first-item-info
+        span.title.title-text Smart Contract and dApps <br> Development
+        p.text We apply our versatile skill set to solving real-world use cases to increase the adoption of blockchain globally.
+    .section-first-item
+      .section-first-item-img
+      .section-first-item-info
+        span.title.title-text Deployment <br>and Maintenance
+        p.text Our open-source products are designed to sustain high loads, with a focus on ease-of-use and flexibility or developers and end users.
 </template>
 
 <style lang="scss" scoped>
@@ -75,8 +78,17 @@
         grid-template-areas: "img" "info";
         height: auto;
       }
-
       &:nth-child(2) {
+        .section-first-item-img {
+          background: url("~static/img/points.svg"),
+            url("~static/img/innovation_pic.svg") no-repeat center/40%;
+
+          @include b(tablet) {
+            background: url("~static/img/technology.svg") no-repeat left/contain;
+          }
+        }
+      }
+      &:nth-child(3) {
         .section-first-item-img {
           background: url("~static/img/points.svg"),
             url("~static/img/technology.svg") no-repeat center/40%;
@@ -87,7 +99,7 @@
         }
       }
 
-      &:nth-child(3) {
+      &:nth-child(4) {
         .section-first-item-img {
           background: url("~static/img/points.svg"),
             url("~static/img/smart.svg") no-repeat center/40%;
@@ -98,7 +110,7 @@
         }
       }
 
-      &:nth-child(4) {
+      &:nth-child(5) {
         @include b(tablet) {
           margin-bottom: 0;
         }
