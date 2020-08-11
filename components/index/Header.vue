@@ -1,77 +1,90 @@
 <template lang="pug">
-  header(v-bind:class="{ 'header-fixed' : fixHeader }")
-    div.header
-      span.logo.logo-hd.header-logo
-      div.header-wrap(v-bind:class="{ 'header-menu-show': menuOpen }")
-        div.btn-close(v-on:click="menuOpen = false")
-          span.btn-close-item
-          span.btn-close-item
-        scrollactive(active-class="active", :offset="80", :duration="800", bezier-easing-value=".5,0,.35,1").header-menu
-          a(href='#what-we-do').link.header-menu-link.scrollactive-item company
-          a(href='#products').link.header-menu-link.scrollactive-item products
-          a(href='#news').link.header-menu-link.scrollactive-item news
-          a(href='#get-in-touch').link.header-menu-link.scrollactive-item contacts
-        div.lang.page-lang
-          div.page-lang-select
-            span.icon.link.page-lang-selected(v-on:click="openedLngList = !openedLngList", :class="[ { opened: openedLngList } ,'icon-' + currLanguage.symbol ]") {{ currLanguage.title }}
-            div.page-lang-select-list(v-if="openedLngList")
-              span.icon.link.page-lang-select-list-title(v-for="lng in languagesList", v-if="!lng['active']", v-on:click="setLanguage(lng)", :class="'icon-' + lng['lng']") {{ lng['title'] }}
-        div.header-footer
-          div.footer-social-links
-            a(href="https://www.facebook.com/@Venlab.dev").link-icon.icon.icon-facebook
-            a(href="https://medium.com/@Venlab.dev").link-icon.icon.icon-medium
-            a(href="https://twitter.com/VenlabDev").link-icon.icon.icon-twitter
-            a(href="https://www.linkedin.com/company/venlab-dev").link-icon.icon.icon-linkedin
-            a(href="https://www.youtube.com/channel/UCEaZKrRGp0TmTWZN9OOJuzw").link-icon.icon.icon-youtube
-            a(href="https://discord.gg/nzghQ3").link-icon.icon.icon-discord
-            a(href="/").link-icon.icon.icon-reddit
-            a(href="/").link-icon.icon.icon-github
-          span.logo-ft
-          a(href='mailto:info@venlab.dev').link.footer-email info@venlab.dev
-          p.text.copyrate ©2020 Ventuary Lab Corporation Inc. All rights reserved.
-      div.header-menu-toggle(v-on:click="menuOpen = !menuOpen")
-          span.header-menu-toggle-line
-          span.header-menu-toggle-line
-          span.header-menu-toggle-line
+header(v-bind:class="{ 'header-fixed': fixHeader }")
+  .header
+    span.logo.logo-hd.header-logo
+    .header-wrap(v-bind:class="{ 'header-menu-show': menuOpen }")
+      .btn-close(v-on:click="menuOpen = false")
+        span.btn-close-item
+        span.btn-close-item
+      scrollactive.header-menu(
+        active-class="active",
+        :offset="80",
+        :duration="800",
+        bezier-easing-value=".5,0,.35,1"
+      )
+        a.link.header-menu-link.scrollactive-item(href="#what-we-do") company
+        a.link.header-menu-link.scrollactive-item(href="#products") products
+        a.link.header-menu-link.scrollactive-item(href="#news") news
+        a.link.header-menu-link.scrollactive-item(href="#get-in-touch") contacts
+      .lang.page-lang
+        .page-lang-select
+          span.icon.link.page-lang-selected(
+            v-on:click="openedLngList = !openedLngList",
+            :class="[{ opened: openedLngList }, 'icon-' + currLanguage.symbol]"
+          ) {{ currLanguage.title }}
+          .page-lang-select-list(v-if="openedLngList")
+            span.icon.link.page-lang-select-list-title(
+              v-for="lng in languagesList",
+              v-if="!lng['active']",
+              v-on:click="setLanguage(lng)",
+              :class="'icon-' + lng['lng']"
+            ) {{ lng['title'] }}
+      .header-footer
+        .footer-social-links
+          a.link-icon.icon.icon-facebook(href="https://www.facebook.com/@Venlab.dev")
+          a.link-icon.icon.icon-medium(href="https://medium.com/@Venlab.dev")
+          a.link-icon.icon.icon-twitter(href="https://twitter.com/VenlabDev")
+          a.link-icon.icon.icon-linkedin(href="https://www.linkedin.com/company/venlab-dev")
+          a.link-icon.icon.icon-youtube(href="https://www.youtube.com/channel/UCEaZKrRGp0TmTWZN9OOJuzw")
+          a.link-icon.icon.icon-discord(href="https://discord.gg/nzghQ3")
+          a.link-icon.icon.icon-reddit(href="/")
+          a.link-icon.icon.icon-github(href="/")
+        span.logo-ft
+        a.link.footer-email(href="mailto:info@venlab.dev") info@venlab.dev
+        p.text.copyrate ©2020 Ventuary Lab Corporation Inc. All rights reserved.
+    .header-menu-toggle(v-on:click="menuOpen = !menuOpen")
+      span.header-menu-toggle-line
+      span.header-menu-toggle-line
+      span.header-menu-toggle-line
 </template>
 
 <script>
 export default {
-  data: function() {
+  data: function () {
     return {
       fixHeader: false,
       menuOpen: false,
       currLanguage: {
         title: "Eng",
-        symbol: "en"
+        symbol: "en",
       },
       openedLngList: false,
       languagesList: [
         {
           lng: "en",
           title: "Eng",
-          active: true
+          active: true,
         },
         {
           lng: "ru",
           title: "Rus",
-          active: false
-        }
-      ]
+          active: false,
+        },
+      ],
     };
   },
   mounted() {
-    window.addEventListener("scroll", event => {
+    window.addEventListener("scroll", (event) => {
       window.scrollY > 60 ? (this.fixHeader = true) : (this.fixHeader = false);
     });
   },
   methods: {
-    setLanguage: function(event) {
+    setLanguage: function (event) {
       this.currLanguage.title = event["title"];
       this.currLanguage.symbol = event["lng"];
       this.openedLngList = false;
 
-      this.languagesList.map(lang => {
+      this.languagesList.map((lang) => {
         if (lang["lng"] === event["lng"]) {
           lang["active"] = true;
         } else {
@@ -81,8 +94,8 @@ export default {
       this.languagesList.sort((a, b) => {
         return b.active ? 1 : -1;
       });
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -166,6 +179,7 @@ header {
       }
 
       .page-lang {
+        visibility: hidden;
         &-select {
           @include b(mobile) {
             display: flex;

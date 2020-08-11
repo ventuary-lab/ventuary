@@ -1,40 +1,50 @@
 <template lang="pug">
-  section.section.section-second#products
-    div.container
-      h2.title.title-lg.title-bg Products
-      div.section-second-item.item-duo
-        div.section-second-item-img
-        div.section-second-item-info
-          a(href="https://gravityhub.org").link.title.title-text.icon.icon-circle-arrow-brown GH
-          div.section-second-item-info-wrap
-            div.section-second-item-info-content
-              p.text Gravity Hub is the only all-encompassing, blockchain-agnostic oracle system that supports the communication of blockchains with the outside world, cross-chain communication, and integration of sidechains, within a single unified structure.
-            div.section-second-item-info-content
-              p.text GH offers new monetization mechanics to node maintainers, alternative to mining. Providers of GH services can monetize their data processing capabilities and get paid in the native tokens of platforms supported by GH.
-      div.section-second-item.item-reverce
-        div.section-second-item-img
-        div.section-second-item-info
-          a(href="https://neutrino.at").link.title.title-text.icon.icon-circle-arrow-purple Neutrino Protocol
-          p.text Neutrino Protocol is an algorithmic price-stable cryptocurrency protocol backed by Waves Platform’s native token.
-          p.text The Protocol allows for the creation of stablecoins tied to a specific real world asset, such as national currency or commodity. The first synthetic asset created with Neutrino Protocol is USD Neutrino (USDN).
-      div.section-second-item
-        div.section-second-item-img
-        div.section-second-item-info
-          a(href="https://beta.ventuary.space/").link.title.title-text.icon.icon-circle-arrow-green Ventuary DAO
-          p.text Ventuary DAO is the first decentralized autonomous organization on the Waves Platform, designed to leverage the wisdom of the crowds and patronage of grant makers to benefit innovators and community.
-      div.section-second-item.item-reverce
-        div.section-second-item-img
-        div.section-second-item-info
-          a(href="https://susy.one").link.title.title-text.icon.icon-circle-arrow-aqua SuSy
-          p.text SuSy (SuperSymmetry) is a service for cross-chain communication & data provision.
-      div.section-second-item.item-duo
-        div.section-second-item-img
-        div.section-second-item-info
-          a(href="https://stepik.org/course/54415/promo#toc").link.title.title-text.icon.icon-circle-arrow-blue Mastering Web 3.0
-          div.section-second-item-info-wrap
-            div.section-second-item-info-content
-              p.text Mastering Web 3.0” is a popular MOOC for developers of new decentralized technologies, built in collaboration with Waves DevRel department.
-            div.section-second-item-info-content
+section#products.section.section-second
+  .container
+    h2.title.title-lg.title-bg Products
+    .section-second-item.item-duo
+      .section-second-item-img
+      .section-second-item-info
+        a.link.title.title-text.icon.icon-circle-arrow-brown(
+          href="https://gravityhub.org"
+        ) Gravity
+        .section-second-item-info-wrap
+          .section-second-item-info-content
+            p.text Gravity Hub is the only all-encompassing, blockchain-agnostic oracle system that supports the communication of blockchains with the outside world, cross-chain communication, and integration of sidechains, within a single unified structure.
+          .section-second-item-info-content
+            p.text Gravity offers new monetization mechanics to node maintainers, alternative to mining. Providers of Gravity services can monetize their data processing capabilities and get paid in the native tokens of platforms supported by Gravity.
+    .section-second-item.item-reverce
+      .section-second-item-img
+      .section-second-item-info
+        a.link.title.title-text.icon.icon-circle-arrow-purple(
+          href="https://neutrino.at"
+        ) Neutrino Protocol
+        p.text Neutrino Protocol is an algorithmic price-stable cryptocurrency protocol backed by Waves Platform’s native token.
+        p.text The Protocol allows for the creation of stablecoins tied to a specific real world asset, such as national currency or commodity. The first synthetic asset created with Neutrino Protocol is USD Neutrino (USDN).
+    .section-second-item
+      .section-second-item-img
+      .section-second-item-info
+        a.link.title.title-text.icon.icon-circle-arrow-green(
+          href="https://beta.ventuary.space/"
+        ) Ventuary DAO
+        p.text Ventuary DAO is the first decentralized autonomous organization on the Waves Platform, designed to leverage the wisdom of the crowds and patronage of grant makers to benefit innovators and community.
+    .section-second-item.item-reverce
+      .section-second-item-img
+      .section-second-item-info
+        a.link.title.title-text.icon.icon-circle-arrow-aqua(
+          href="https://susy.one"
+        ) SuSy
+        p.text SuSy (SuperSymmetry) is a service for cross-chain communication & data provision.
+    .section-second-item.item-duo
+      .section-second-item-img
+      .section-second-item-info
+        a.link.title.title-text.icon.icon-circle-arrow-blue(
+          href="https://stepik.org/course/54415/promo#toc"
+        ) Mastering Web 3.0
+        .section-second-item-info-wrap
+          .section-second-item-info-content
+            p.text Mastering Web 3.0” is a popular MOOC for developers of new decentralized technologies, built in collaboration with Waves DevRel department.
+          .section-second-item-info-content
 </template>
 
 <style lang="scss" scoped>
@@ -90,9 +100,8 @@
 
       &:nth-child(2) {
         .section-second-item-img {
-          background: url("~static/img/gravity-product-logo.svg") no-repeat
-              center/30%,
-            url("~static/img/gh-product.png") no-repeat center/contain;
+          background: url("~static/img/Gravity_product@2x.png") no-repeat
+            center/contain;
 
           @include b(tablet) {
             background: url("~static/img/gravity-hub-products-mob.png")
