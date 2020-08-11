@@ -1,15 +1,15 @@
 <template lang="pug">
-  section.section.section-six#get-in-touch
-    .container
-      h2.title.title-lg Get in touch
-      div.form-block
-        form
-          input(type='text', placeholder='Name').input
-          input(type='email', placeholder='Email').input
-          input(type='text', placeholder='Subject').input
-          textarea(cols="10", rows="1", placeholder='Message').textarea
-          div.form-block-buttons
-            button(type='submit').form-button.btn.btn-border Send
+section#get-in-touch.section.section-six
+  .container
+    h2.title.title-lg Get in touch
+    .form-block
+      form
+        input.input(type="text", placeholder="Name")
+        input.input(type="email", placeholder="Email")
+        input.input(type="text", placeholder="Subject")
+        textarea.textarea(cols="10", rows="1", placeholder="Message")
+        .form-block-buttons
+          button.form-button.btn.btn-border(type="submit") Send
 </template>
 
 <style lang="scss" scoped>
@@ -32,6 +32,9 @@
     }
 
     .form-block {
+      max-width: 615px;
+    }
+    .textarea {
       max-width: 615px;
     }
   }

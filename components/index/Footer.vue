@@ -9,11 +9,11 @@ footer
         a.link(href="https://gravityhub.org") GravityHub
         a.link(href="https://susy.one") SuSy
         a.link(href="https://neutrino.at") Neutrino
-        a.link(href="https://beta.ventuary.space/") Ventuary-DAO
+        a.link(href="https://beta.ventuary.space") Ventuary-DAO
         a.link(href="https://stepik.org/course/54415/promo#toc") Mastering Web 3.0
       .footer-menu-item
         span.footer-menu-title News
-        a.link(href="/") Blog
+        a.link(href="https://medium.com/@Venlab.dev") Blog
         a.link(href="/") Brand Assets
       .footer-menu-item
         span.footer-menu-title Developers

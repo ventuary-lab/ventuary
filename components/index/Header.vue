@@ -31,11 +31,17 @@ header(v-bind:class="{ 'header-fixed': fixHeader }")
             ) {{ lng['title'] }}
       .header-footer
         .footer-social-links
-          a.link-icon.icon.icon-facebook(href="https://www.facebook.com/@Venlab.dev")
+          a.link-icon.icon.icon-facebook(
+            href="https://www.facebook.com/@Venlab.dev"
+          )
           a.link-icon.icon.icon-medium(href="https://medium.com/@Venlab.dev")
           a.link-icon.icon.icon-twitter(href="https://twitter.com/VenlabDev")
-          a.link-icon.icon.icon-linkedin(href="https://www.linkedin.com/company/venlab-dev")
-          a.link-icon.icon.icon-youtube(href="https://www.youtube.com/channel/UCEaZKrRGp0TmTWZN9OOJuzw")
+          a.link-icon.icon.icon-linkedin(
+            href="https://www.linkedin.com/company/venlab-dev"
+          )
+          a.link-icon.icon.icon-youtube(
+            href="https://www.youtube.com/channel/UCEaZKrRGp0TmTWZN9OOJuzw"
+          )
           a.link-icon.icon.icon-discord(href="https://discord.gg/nzghQ3")
           a.link-icon.icon.icon-reddit(href="/")
           a.link-icon.icon.icon-github(href="/")
