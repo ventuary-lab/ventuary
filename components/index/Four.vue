@@ -1,10 +1,25 @@
 <template lang="pug">
-  section.section.section-four
-    .container#news
-      a.link.title.title-lg.title-bg.icon.icon-circle-arrow-gray News
-      div.section-four-items
-        div.section-four-item
-          div.section-four-item-center
+      import VueRssParser from "vue-rss-parser";
+...
+export default {
+  name: "Demo",
+  components: {
+    VueRssParser
+  },
+  data() {
+    return {
+      feedUrl: "https://medium.com/feed/@gravity_protocol",
+      name: "",
+      limit: 5,
+    };
+  },
+};
+section.section.section-four
+  #news.container
+    a.link.title.title-lg.title-bg.icon.icon-circle-arrow-gray News
+    .section-four-items
+      .section-four-item
+       div.section-four-item-center
             span.title.title-text New project SuSy
             p.text Our team is working on a very interesting project SuSy. Follow the news!
           div.section-four-item-bottom
@@ -27,6 +42,10 @@
             div.section-four-img
             a(href="/").link See more
 </template>
+<template>
+  <VueRssParser :feedUrl="feedUrl" :name="name" :limit="limit" />
+</template>
+
 
 <style lang="scss" scoped>
 @import "../../assets/scss/mixins/media.scss";
