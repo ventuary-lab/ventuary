@@ -1,7 +1,8 @@
 <template lang="pug">
 footer
   .container
-    span.logo-ft
+    span
+    a.logo-ft(href="/")
     a.link.footer-email(href="mailto:info@venlab.dev") info@venlab.dev
     .footer-menu
       .footer-menu-item

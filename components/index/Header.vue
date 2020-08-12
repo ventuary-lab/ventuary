@@ -1,7 +1,9 @@
 <template lang="pug">
 header(v-bind:class="{ 'header-fixed': fixHeader }")
   .header
-    span.logo.logo-hd.header-logo
+    span
+    .logo
+    a.logo-hd.header-logo(href="/") 
     .header-wrap(v-bind:class="{ 'header-menu-show': menuOpen }")
       .btn-close(v-on:click="menuOpen = false")
         span.btn-close-item
