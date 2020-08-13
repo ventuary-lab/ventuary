@@ -1,4 +1,4 @@
-<template lang="pug">
+<!--template lang="pug">
   section.section.section-four
     .container#news
       a.link.title.title-lg.title-bg.icon.icon-circle-arrow-gray News
@@ -26,44 +26,58 @@
           div.section-four-item-bottom
             div.section-four-img
             a(href="/").link See more
+</template-->
+
+<template>
+ <VueRssParser :feedUrl="feedUrl" :name="name" :limit="limit"/>
 </template>
+
+<script>
+  import VueRssParser from "vue-rss-parser";
+
+  export default {
+    name: "Gravity Feed",
+    components: {
+      VueRssParser
+    },
+    data() {
+      return {
+        feedUrl: "https://medium.com/feed/@gravity_protocol",
+        name: "",
+        limit: 3,
+      };
+    },
+  };
+</script>
 
 <style lang="scss" scoped>
 @import "../../assets/scss/mixins/media.scss";
 @import "../../assets/scss/mixins/main.scss";
-
 .section {
   &-four {
     margin-top: 80px;
-
     @include b(mobile) {
       margin-top: 0px;
     }
-
     .container {
       max-width: 1100px;
-
       .title {
         &-lg {
           margin-bottom: 80px;
-
           @include b(mobile) {
             margin-bottom: 20px;
           }
-
           &:after {
             margin-bottom: 5px;
           }
         }
       }
     }
-
     &-items {
       display: flex;
       justify-content: space-between;
       margin: 0 -10px;
     }
-
     &-item {
       display: flex;
       flex-wrap: wrap;
@@ -74,36 +88,29 @@
       width: 100%;
       min-height: 340px;
       margin: 0 10px;
-
       @include b(900) {
         max-width: 50%;
       }
-
       @include b(mobile) {
         max-width: 100%;
       }
-
       &:nth-child(2) {
         @include b(mobile) {
           display: none;
         }
       }
-
       &:nth-child(3) {
         @include b(900) {
           display: none;
         }
       }
-
       .text,
       .title {
         width: 100%;
       }
-
       &-center {
         width: 100%;
       }
-
       &-bottom {
         display: flex;
         justify-content: space-between;
@@ -111,7 +118,6 @@
         width: 100%;
         margin-top: 15px;
       }
-
       .link {
         width: max-content;
         text-decoration: underline;
