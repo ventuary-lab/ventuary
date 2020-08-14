@@ -43,7 +43,7 @@ section#products.section.section-second
         ) Mastering Web 3.0
         .section-second-item-info-wrap
           .section-second-item-info-content
-            p.text Mastering Web 3.0” is a popular MOOC for developers of new decentralized technologies, built in collaboration with Waves DevRel department.
+            p.text Mastering Web 3.0 is a popular MOOC for developers of new decentralized technologies, built in collaboration with Waves DevRel department.
           .section-second-item-info-content
 </template>
 
