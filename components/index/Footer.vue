@@ -7,7 +7,7 @@ footer
     .footer-menu
       .footer-menu-item
         span.footer-menu-title Products
-        a.link(href="https://gravityhub.org") GravityHub
+        a.link(href="https://gravityhub.org") Gravity
         a.link(href="https://susy.one") SuSy
         a.link(href="https://neutrino.at") Neutrino
         a.link(href="https://beta.ventuary.space") Ventuary-DAO

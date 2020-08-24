@@ -31,7 +31,6 @@ section.section.section-four
 <style lang="scss" scoped>
 @import "../../assets/scss/mixins/media.scss";
 @import "../../assets/scss/mixins/main.scss";
-
 .section {
   &-four {
     margin-top: 80px;
@@ -40,31 +39,25 @@ section.section.section-four
     @include b(mobile) {
       margin-top: 0px;
     }
-
     .container {
       max-width: 1100px;
-
       .title {
         &-lg {
           margin-bottom: 80px;
-
           @include b(mobile) {
             margin-bottom: 20px;
           }
-
           &:after {
             margin-bottom: 5px;
           }
         }
       }
     }
-
     &-items {
       display: flex;
       justify-content: space-between;
       margin: 0 -10px;
     }
-
     &-item {
       display: flex;
       flex-wrap: wrap;
@@ -75,36 +68,29 @@ section.section.section-four
       width: 100%;
       min-height: 340px;
       margin: 0 10px;
-
       @include b(900) {
         max-width: 50%;
       }
-
       @include b(mobile) {
         max-width: 100%;
       }
-
       &:nth-child(2) {
         @include b(mobile) {
           display: none;
         }
       }
-
       &:nth-child(3) {
         @include b(900) {
           display: none;
         }
       }
-
       .text,
       .title {
         width: 100%;
       }
-
       &-center {
         width: 100%;
       }
-
       &-bottom {
         display: flex;
         justify-content: space-between;
@@ -112,7 +98,6 @@ section.section.section-four
         width: 100%;
         margin-top: 15px;
       }
-
       .link {
         width: max-content;
         text-decoration: underline;
