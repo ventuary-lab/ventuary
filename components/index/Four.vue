@@ -9,7 +9,7 @@ section.section.section-four
           p.text Our team is working on a very interesting project SuSy. Follow the news!
         .section-four-item-bottom
           .section-four-img
-            img.img(src="img/susy-logo-news.svg", alt="susy logo")
+            img.img-susy(src="img/susy-logo-news.svg", alt="susy logo")
           a.link(href="/") See more
       .section-four-item
         .section-four-item-center
@@ -17,7 +17,10 @@ section.section.section-four
           p.text Our team is working on a very interesting project Gravity Hub. Follow the news!
         .section-four-item-bottom
           .section-four-img
-            img.img(src="img/gravity-hub-logo.svg", alt="gravity hub logo")
+            img.img-gravity(
+              src="img/gravity-hub-logo.svg",
+              alt="gravity hub logo"
+            )
           a.link(href="/") See more
       .section-four-item
         .section-four-item-center
