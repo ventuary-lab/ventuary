@@ -1,54 +1,35 @@
-<!--template lang="pug">
-  section.section.section-four
-    .container#news
-      a.link.title.title-lg.title-bg.icon.icon-circle-arrow-gray News
-      div.section-four-items
-        div.section-four-item
-          div.section-four-item-center
-            span.title.title-text New project SuSy
-            p.text Our team is working on a very interesting project SuSy. Follow the news!
-          div.section-four-item-bottom
-            div.section-four-img
-              img(src='img/susy-logo-news.svg', alt='susy logo').img
-            a(href="/").link See more
-        div.section-four-item
-          div.section-four-item-center
-            span.title.title-text New project GH
-            p.text Our team is working on a very interesting project Gravity Hub. Follow the news!
-          div.section-four-item-bottom
-            div.section-four-img
-              img(src='img/gravity-hub-logo.svg', alt='gravity hub logo').img
-            a(href="/").link See more
-        div.section-four-item
-          div.section-four-item-center
-            span.title.title-text New post
-            p.text Our team is working on a very interesting project SuSy. Follow the news!
-          div.section-four-item-bottom
-            div.section-four-img
-            a(href="/").link See more
-</template-->
-
-<template>
- <VueRssParser :feedUrl="feedUrl" :name="name" :limit="limit"/>
+<template lang="pug">
+section.section.section-four
+  #news.container
+    a.link.title.title-lg.title-bg.icon.icon-circle-arrow-gray News
+    .section-four-items
+      .section-four-item
+        .section-four-item-center
+          span.title.title-text New project SuSy
+          p.text Our team is working on a very interesting project SuSy. Follow the news!
+        .section-four-item-bottom
+          .section-four-img
+            img.img-susy(src="img/susy-logo-news.svg", alt="susy logo")
+          a.link(href="/") See more
+      .section-four-item
+        .section-four-item-center
+          span.title.title-text New project GH
+          p.text Our team is working on a very interesting project Gravity Hub. Follow the news!
+        .section-four-item-bottom
+          .section-four-img
+            img.img-gravity(
+              src="img/gravity-hub-logo.svg",
+              alt="gravity hub logo"
+            )
+          a.link(href="/") See more
+      .section-four-item
+        .section-four-item-center
+          span.title.title-text New post
+          p.text Our team is working on a very interesting project SuSy. Follow the news!
+        .section-four-item-bottom
+          .section-four-img
+          a.link(href="/") See more
 </template>
-
-<script>
-  import VueRssParser from "vue-rss-parser";
-
-  export default {
-    name: "Gravity Feed",
-    components: {
-      VueRssParser
-    },
-    data() {
-      return {
-        feedUrl: "https://medium.com/feed/@gravity_protocol",
-        name: "",
-        limit: 3,
-      };
-    },
-  };
-</script>
 
 <style lang="scss" scoped>
 @import "../../assets/scss/mixins/media.scss";
@@ -56,6 +37,8 @@
 .section {
   &-four {
     margin-top: 80px;
+    display: none;
+
     @include b(mobile) {
       margin-top: 0px;
     }

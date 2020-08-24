@@ -1,12 +1,13 @@
 <template lang="pug">
 footer
   .container
-    span.logo-ft
+    span
+    a.logo-ft(href="/")
     a.link.footer-email(href="mailto:info@venlab.dev") info@venlab.dev
     .footer-menu
       .footer-menu-item
         span.footer-menu-title Products
-        a.link(href="https://gravityhub.org") GravityHub
+        a.link(href="https://gravityhub.org") Gravity
         a.link(href="https://susy.one") SuSy
         a.link(href="https://neutrino.at") Neutrino
         a.link(href="https://beta.ventuary.space") Ventuary-DAO

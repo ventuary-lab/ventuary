@@ -1,7 +1,9 @@
 <template lang="pug">
 header(v-bind:class="{ 'header-fixed': fixHeader }")
   .header
-    span.logo.logo-hd.header-logo
+    span
+    .logo
+    a.logo-hd.header-logo(href="/") 
     .header-wrap(v-bind:class="{ 'header-menu-show': menuOpen }")
       .btn-close(v-on:click="menuOpen = false")
         span.btn-close-item
@@ -14,7 +16,6 @@ header(v-bind:class="{ 'header-fixed': fixHeader }")
       )
         a.link.header-menu-link.scrollactive-item(href="#what-we-do") company
         a.link.header-menu-link.scrollactive-item(href="#products") products
-        a.link.header-menu-link.scrollactive-item(href="#news") news
         a.link.header-menu-link.scrollactive-item(href="#get-in-touch") contacts
       .lang.page-lang
         .page-lang-select
