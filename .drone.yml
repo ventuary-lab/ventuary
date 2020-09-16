@@ -14,7 +14,7 @@ pipeline:
     port:
       from_secret: ssh_port
     script:
-        - bash deploy.sh
+        - cd /var/www/ventuary && bash deploy.sh
 
 trigger:
   branch:
