@@ -10,7 +10,7 @@ pipeline:
       host: venlab.dev
       username: root
       key:
-        from_secret: ssh_key
+        from_secret: password
       port: 22
       script:
         - cd "$VENLAB_BASE" && bash deploy.sh
