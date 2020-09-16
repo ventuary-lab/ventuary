@@ -4,7 +4,7 @@ name: venlab-landing
 
 
 pipeline:
-  - name: ssh commands
+  deployment:
     image: appleboy/drone-ssh
     settings:
       host: venlab.dev
