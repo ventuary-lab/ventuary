@@ -14,8 +14,7 @@ pipeline:
     port:
       from_secret: ssh_port
     script:
-        - source ~/.bashrc
-        - cd "$VENLAB_BASE" && bash deploy.sh
+        - bash deploy.sh
 
 trigger:
   branch:
