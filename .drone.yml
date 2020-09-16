@@ -7,16 +7,13 @@ pipeline:
   deployment:
     image: appleboy/drone-ssh
     host: venlab.dev
-    settings:
-      key:
-        from_secret: password
-      host:
-        from_secret: ssh_host
-      username:
-        from_secret: ssh_username
-      port:
-        from_secret: ssh_port
-      script:
+    key:
+      from_secret: password
+    username:
+      from_secret: ssh_username
+    port:
+      from_secret: ssh_port
+    script:
         - cd "$VENLAB_BASE" && bash deploy.sh
 
 trigger:
