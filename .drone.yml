@@ -1,0 +1,19 @@
+kind: pipeline
+type: ssh
+name: venlab-landing
+
+server:
+  host: venlab.dev
+  user: root
+  password:
+    from_secret: password
+
+steps:
+- name: Deployment
+  commands:
+  - cd "$VENLAB_BASE" && bash deploy.sh
+
+trigger:
+  branch:
+  - master
+  - drone
