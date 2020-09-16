@@ -1,18 +1,19 @@
----
 kind: pipeline
-type: ssh
+type: docker
 name: venlab-landing
 
-server:
-  host: venlab.dev
-  user: root
-  password:
-    from_secret: password
 
-steps:
-- name: Deployment
-  commands:
-  - cd "$VENLAB_BASE" && bash deploy.sh
+pipeline:
+  - name: ssh commands
+    image: appleboy/drone-ssh
+    settings:
+      host: venlab.dev
+      username: root
+      key:
+        from_secret: ssh_key
+      port: 22
+      script:
+        - cd "$VENLAB_BASE" && bash deploy.sh
 
 trigger:
   branch:
