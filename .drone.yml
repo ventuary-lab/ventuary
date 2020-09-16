@@ -6,6 +6,7 @@ name: venlab-landing
 pipeline:
   deployment:
     image: appleboy/drone-ssh
+    host: venlab.dev
     settings:
       key:
         from_secret: password
