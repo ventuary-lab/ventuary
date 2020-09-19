@@ -1,34 +1,39 @@
 <template lang="pug">
 section.section.section-four
   #news.container
-    a.link.title.title-lg.title-bg.icon.icon-circle-arrow-gray News
+    a.link.title.title-lg.title-bg.icon.icon-circle-arrow-gray(
+      href="https://medium.com/@Venlab.dev",
+      target="_blank"
+    ) News
     .section-four-items
       .section-four-item
         .section-four-item-center
-          span.title.title-text New project SuSy
-          p.text Our team is working on a very interesting project SuSy. Follow the news!
-        .section-four-item-bottom
-          .section-four-img
-            img.img-susy(src="img/susy-logo-news.svg", alt="susy logo")
-          a.link(href="/") See more
+          img.item-news(src="img/susy.png")
+          span.title.title-text SuSy: a blockchain-agnostic cross-chain assets transfer gateway...
+          p.text Keywords: oracles, cross-chain, interoperability, interchain transfers, gravity&nbsp;protocol.
+        a.link(
+          href="https://medium.com/gravity-protocol/susy-a-blockchain-agnostic-cross-chain-asset-transfer-gateway-protocol-based-on-gravity-9d5b1550e5f4",
+          target="_blank"
+        ) See more
       .section-four-item
         .section-four-item-center
-          span.title.title-text New project GH
-          p.text Our team is working on a very interesting project Gravity Hub. Follow the news!
-        .section-four-item-bottom
-          .section-four-img
-            img.img-gravity(
-              src="img/gravity-hub-logo.svg",
-              alt="gravity hub logo"
-            )
-          a.link(href="/") See more
+          img.item-news(src="img/1inch.png")
+          span.title.title-text 1inch joins Gravity Network as interchain transfer provider for Ethereum ecosystem
+          p.text We are excited to announce a collaboration between the Gravity protocol and 1inch, a DEX aggregator focused on the most seamless&nbsp;user…
+          span
+        a.link(
+          href="https://medium.com/gravity-protocol/1inch-joins-gravity-network-as-interchain-transfer-provider-for-ethereum-ecosystem-386bd80e746b",
+          target="_blank"
+        ) See more
       .section-four-item
         .section-four-item-center
-          span.title.title-text New post
-          p.text Our team is working on a very interesting project SuSy. Follow the news!
-        .section-four-item-bottom
-          .section-four-img
-          a.link(href="/") See more
+          img.item-news(src="img/Neutrino & Band.png")
+          span.title.title-text Neutrino Integrates Band Protocol’s Oracle To Secure Stablecoin Protocol
+          p.text Neutrino and Band Protocol have collaborated on creating a secure oracle and independent emergency system to the algorithmic stablecoin...
+        a.link(
+          target="_blank",
+          href="https://medium.com/neutrinoteam/neutrino-integrates-band-protocols-oracle-to-secure-stablecoin-protocol-a1aebf68f728"
+        ) See more
 </template>
 
 <style lang="scss" scoped>
@@ -37,7 +42,6 @@ section.section.section-four
 .section {
   &-four {
     margin-top: 80px;
-    display: none;
 
     @include b(mobile) {
       margin-top: 0px;
@@ -45,6 +49,7 @@ section.section.section-four
     .container {
       max-width: 1100px;
       .title {
+        font-size: 14px;
         &-lg {
           margin-bottom: 80px;
           @include b(mobile) {
@@ -104,7 +109,13 @@ section.section.section-four
       .link {
         width: max-content;
         text-decoration: underline;
+        text-align: end;
         @include rem(14);
+      }
+      .item-news {
+        width: 309px;
+        height: 150px;
+        border-radius: 5px;
       }
     }
   }

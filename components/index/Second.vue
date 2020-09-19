@@ -6,13 +6,11 @@ section#products.section.section-second
       .section-second-item-img
       .section-second-item-info
         a.link.title.title-text.icon.icon-circle-arrow-brown(
-          href="https://gravityhub.org"
-        ) Gravity
+          href="https://gravity.tech"
+        ) Gravity Protocol
         .section-second-item-info-wrap
           .section-second-item-info-content
-            p.text Gravity Hub is the only all-encompassing, blockchain-agnostic oracle system that supports the communication of blockchains with the outside world, cross-chain communication, and integration of sidechains, within a single unified structure.
-          .section-second-item-info-content
-            p.text Gravity offers new monetization mechanics to node maintainers, alternative to mining. Providers of Gravity services can monetize their data processing capabilities and get paid in the native tokens of platforms supported by Gravity.
+            p.text Gravity Protocol is a blockchain-agnostic oracle system that supports communication of blockchains with the outside world, cross-chain communication, and side chains within a single unified structure.
     .section-second-item.item-reverce
       .section-second-item-img
       .section-second-item-info
@@ -24,17 +22,25 @@ section#products.section.section-second
     .section-second-item
       .section-second-item-img
       .section-second-item-info
-        a.link.title.title-text.icon.icon-circle-arrow-green(
-          href="https://beta.ventuary.space/"
-        ) Ventuary DAO
-        p.text Ventuary DAO is the first decentralized autonomous organization on the Waves Platform, designed to leverage the wisdom of the crowds and patronage of grant makers to benefit innovators and community.
+        a.link.title.title-text.icon.icon-circle-arrow-aqua(
+          href="https://medium.com/gravity-protocol/susy-a-blockchain-agnostic-cross-chain-asset-transfer-gateway-protocol-based-on-gravity-9d5b1550e5f4"
+        ) SuSy
+        p.text SuSy is a blockchain-agnostic cross-chain asset transfer gateway protocol based on Gravity
     .section-second-item.item-reverce
       .section-second-item-img
       .section-second-item-info
+        a.link.title.title-text.icon.icon-circle-arrow-green(
+          href="https://nampi.one/"
+        ) Nampi AI
+        p.text Nampi is a crowdsourcing marketplace that makes it easier for individuals and businesses to outsource their processes and jobs to a distributed workforce who can perform these tasks virtually.
+    .section-second-item
+      .section-second-item-img
+      .section-second-item-info
         a.link.title.title-text.icon.icon-circle-arrow-aqua(
-          href="https://susy.one"
-        ) SuSy
-        p.text SuSy (SuperSymmetry) is a service for cross-chain communication & data provision.
+          href="https://graviton.one/"
+        ) Graviton
+        p.text A decentralised liquidity network for interchain digital assets
+
     .section-second-item.item-duo
       .section-second-item-img
       .section-second-item-info
@@ -99,6 +105,7 @@ section#products.section.section-second
       }
 
       &:nth-child(2) {
+        border-radius: 10px;
         .section-second-item-img {
           background: url("~static/img/Gravity_product@2x.png") no-repeat
             center/contain;
@@ -125,19 +132,6 @@ section#products.section.section-second
 
       &:nth-child(4) {
         .section-second-item-img {
-          background: url("~static/img/dao-product-logo.svg") no-repeat
-              center/30%,
-            url("~static/img/dao-product.png") no-repeat center/contain;
-
-          @include b(tablet) {
-            background: url("~static/img/ventuary-dao-product-mob.png")
-              no-repeat center/contain;
-          }
-        }
-      }
-
-      &:nth-child(5) {
-        .section-second-item-img {
           background: url("~static/img/susy-product-logo.svg") no-repeat
               center/30%,
             url("~static/img/susy-product.png") no-repeat center/contain;
@@ -149,7 +143,31 @@ section#products.section.section-second
         }
       }
 
+      &:nth-child(5) {
+        .section-second-item-img {
+          background: url("~static/img/nampi_news@2x.png") no-repeat
+            center/contain;
+
+          @include b(tablet) {
+            background: url("~static/img/nampi_news@2x.png") no-repeat
+              center/contain;
+          }
+        }
+      }
+
       &:nth-child(6) {
+        .section-second-item-img {
+          background: url("~static/img/Graviton_preview@1x.png") no-repeat
+            center/contain;
+
+          @include b(tablet) {
+            background: url("~static/img/Graviton_preview@1x.png") no-repeat
+              center/contain;
+          }
+        }
+      }
+
+      &:nth-child(7) {
         @include b(tablet) {
           margin-bottom: 0px;
         }
