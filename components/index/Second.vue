@@ -6,7 +6,8 @@ section#products.section.section-second
       .section-second-item-img
       .section-second-item-info
         a.link.title.title-text.icon.icon-circle-arrow-brown(
-          href="https://gravity.tech"
+          href="https://gravity.tech",
+          target="_blank"
         ) Gravity Protocol
         .section-second-item-info-wrap
           .section-second-item-info-content
@@ -15,7 +16,8 @@ section#products.section.section-second
       .section-second-item-img
       .section-second-item-info
         a.link.title.title-text.icon.icon-circle-arrow-purple(
-          href="https://neutrino.at"
+          href="https://neutrino.at",
+          target="_blank"
         ) Neutrino Protocol
         p.text Neutrino Protocol is an algorithmic price-stable cryptocurrency protocol backed by Waves Platform’s native token.
         p.text The Protocol allows for the creation of stablecoins tied to a specific real world asset, such as national currency or commodity. The first synthetic asset created with Neutrino Protocol is USD Neutrino (USDN).
@@ -23,21 +25,24 @@ section#products.section.section-second
       .section-second-item-img
       .section-second-item-info
         a.link.title.title-text.icon.icon-circle-arrow-aqua(
-          href="https://medium.com/gravity-protocol/susy-a-blockchain-agnostic-cross-chain-asset-transfer-gateway-protocol-based-on-gravity-9d5b1550e5f4"
+          href="https://medium.com/gravity-protocol/susy-a-blockchain-agnostic-cross-chain-asset-transfer-gateway-protocol-based-on-gravity-9d5b1550e5f4",
+          target="_blank"
         ) SuSy
         p.text SuSy is a blockchain-agnostic cross-chain asset transfer gateway protocol based on Gravity
     .section-second-item.item-reverce
       .section-second-item-img
       .section-second-item-info
         a.link.title.title-text.icon.icon-circle-arrow-green(
-          href="https://nampi.one/"
+          href="https://nampi.one/",
+          target="_blank"
         ) Nampi AI
         p.text Nampi is a crowdsourcing marketplace that makes it easier for individuals and businesses to outsource their processes and jobs to a distributed workforce who can perform these tasks virtually.
     .section-second-item
       .section-second-item-img
       .section-second-item-info
         a.link.title.title-text.icon.icon-circle-arrow-aqua(
-          href="https://graviton.one/"
+          href="https://graviton.one/",
+          target="_blank"
         ) Graviton
         p.text A decentralised liquidity network for interchain digital assets
 
@@ -45,7 +50,8 @@ section#products.section.section-second
       .section-second-item-img
       .section-second-item-info
         a.link.title.title-text.icon.icon-circle-arrow-blue(
-          href="https://stepik.org/course/54415/promo#toc"
+          href="https://stepik.org/course/54415/promo#toc",
+          target="_blank"
         ) Mastering Web 3.0
         .section-second-item-info-wrap
           .section-second-item-info-content

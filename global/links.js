@@ -1,10 +1,11 @@
-export const mainTitle = 'Ventuary Lab'
-const previewImagePath = 'https://venlab.dev/img/preview/Vlab_preview@2x.png'
+export const mainTitle = 'Ventuary Lab';
 
-export const shortDescription = 'Decentralization matter'
+const previewImagePath = 'https://venlab.dev/img/preview/preview_GH@1x.png';
+
+export const shortDescription = 'Decentralization matter';
 const longDescription = `
 Ventuary Lab is a leading Web3 & blockchain development team. Our solutions and products form the foundation for the open financial infrastructure of the future..
-`
+`;
 export const metaTags = [
    {
       charset: 'utf-8',
@@ -23,7 +24,7 @@ export const metaTags = [
       property: 'og:url',
    },
    {
-      content: 'Graviton',
+      content: 'Ventuary Lab',
       property: 'og:site_name',
    },
    {
@@ -31,7 +32,7 @@ export const metaTags = [
       content: previewImagePath
    },
    {
-      content: 'Graviton',
+      content: 'Ventuary Lab',
       property: 'twitter:site',
    },
    {
@@ -79,9 +80,3 @@ export const metaTags = [
       content: longDescription,
    },
 ];
-//export default {
-//   name: 'links',
-//   components: {
-//      metaTags,
-//   }
-//};
