@@ -24,20 +24,12 @@ section#products.section.section-second
     .section-second-item
       .section-second-item-img
       .section-second-item-info
-        a.link.title.title-text.icon.icon-circle-arrow-aqua(
-          href="https://medium.com/gravity-protocol/susy-a-blockchain-agnostic-cross-chain-asset-transfer-gateway-protocol-based-on-gravity-9d5b1550e5f4",
-          target="_blank"
-        ) SuSy
-        p.text SuSy is a blockchain-agnostic cross-chain asset transfer gateway protocol based on Gravity
-    .section-second-item.item-reverce
-      .section-second-item-img
-      .section-second-item-info
         a.link.title.title-text.icon.icon-circle-arrow-green(
           href="https://nampi.one/",
           target="_blank"
         ) Nampi AI
         p.text Nampi is a crowdsourcing marketplace that makes it easier for individuals and businesses to outsource their processes and jobs to a distributed workforce who can perform these tasks virtually.
-    .section-second-item
+    .section-second-item.item-reverce
       .section-second-item-img
       .section-second-item-info
         a.link.title.title-text.icon.icon-circle-arrow-aqua(
@@ -138,19 +130,6 @@ section#products.section.section-second
 
       &:nth-child(4) {
         .section-second-item-img {
-          background: url("~static/img/susy-product-logo.svg") no-repeat
-              center/30%,
-            url("~static/img/susy-product.png") no-repeat center/contain;
-
-          @include b(tablet) {
-            background: url("~static/img/susy-product-mob.png") no-repeat
-              center/contain;
-          }
-        }
-      }
-
-      &:nth-child(5) {
-        .section-second-item-img {
           background: url("~static/img/nampi_news@2x.png") no-repeat
             center/contain;
 
@@ -161,7 +140,7 @@ section#products.section.section-second
         }
       }
 
-      &:nth-child(6) {
+      &:nth-child(5) {
         .section-second-item-img {
           background: url("~static/img/Graviton_preview@1x.png") no-repeat
             center/contain;
@@ -173,7 +152,7 @@ section#products.section.section-second
         }
       }
 
-      &:nth-child(7) {
+      &:nth-child(6) {
         @include b(tablet) {
           margin-bottom: 0px;
         }
