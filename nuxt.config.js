@@ -1,6 +1,4 @@
-//const metaTags = require('./global/links');
 const { sections, metaTags, flattenSections, shortDescription, getSitemap } = require('./global/links');
-
 
 export const head = {
   title: "Ventuary",
