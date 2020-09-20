@@ -8,18 +8,26 @@ footer
       .footer-menu-item
         span.footer-menu-title Products
         a.link(href="https://gravityhub.org") Gravity
-        a.link(href="https://susy.one") SuSy
+        a.link(
+          href="https://medium.com/gravity-protocol/susy-a-blockchain-agnostic-cross-chain-asset-transfer-gateway-protocol-based-on-gravity-9d5b1550e5f4"
+        ) SuSy
         a.link(href="https://neutrino.at") Neutrino
-        a.link(href="https://beta.ventuary.space") Ventuary-DAO
+        //a.link(href="https://beta.ventuary.space") Ventuary-DAO
         a.link(href="https://stepik.org/course/54415/promo#toc") Mastering Web 3.0
+      .footer-menu-item
+        span.footer-menu-title Company
+        a.link(href="https://medium.com/@Venlab.dev") About
+        a.link(href="/") Research
+        a.link(href="/") Contacts
+        a.link(href="/") Products
       .footer-menu-item
         span.footer-menu-title News
         a.link(href="https://medium.com/@Venlab.dev") Blog
-        a.link(href="/") Brand Assets
+        //a.link(href="/") Brand Assets
       .footer-menu-item
         span.footer-menu-title Developers
-        a.link(href="/") Whitepapers
-        a.link(href="/") GitHub
+        //a.link(href="/") Whitepapers
+        a.link(href="https://github.com/ventuary-lab") GitHub
     .footer-links
       .lang.page-lang
         .page-lang-select
@@ -43,13 +51,12 @@ footer
         a.link-icon.icon.icon-linkedin(
           href="https://www.linkedin.com/company/venlab-dev"
         )
-        a.link-icon.icon.icon-youtube(
-          href="https://www.youtube.com/channel/UCEaZKrRGp0TmTWZN9OOJuzw"
-        )
-        a.link-icon.icon.icon-discord(href="https://discord.gg/nzghQ3")
-        a.link-icon.icon.icon-reddit(href="/")
-        a.link-icon.icon.icon-github(href="/")
-    p.text.copyrate ©2020 Ventuary Lab Corporation Inc. All rights reserved.
+        //a.link-icon.icon.icon-youtube(
+          href="https://www.youtube.com/channel/UCEaZKrRGp0TmTWZN9OOJuzw")
+        //a.link-icon.icon.icon-discord(href="https://discord.gg/nzghQ3")
+        //a.link-icon.icon.icon-reddit(href="/")
+        a.link-icon.icon.icon-github(href="https://github.com/ventuary-lab")
+    p.text.copyrate ©2019 Ventuary Lab Corporation Inc. All rights reserved.
 </template>
 
 <script>

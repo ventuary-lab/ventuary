@@ -3,14 +3,38 @@ section#get-in-touch.section.section-six
   .container
     h2.title.title-lg Get in touch
     .form-block
-      form
-        input.input(type="text", placeholder="Name")
-        input.input(type="email", placeholder="Email")
-        input.input(type="text", placeholder="Subject")
-        textarea.textarea(cols="10", rows="1", placeholder="Message")
+      form(method="post")
+        input.input(type="text", placeholder="Name", v-model="text")
+        input.input(type="email", placeholder="Email", v-model="email")
+        input.input(type="text", placeholder="Subject", v-model="subject")
+        textarea.textarea(
+          cols="10",
+          rows="1",
+          placeholder="Message",
+          v-model="message"
+        )
         .form-block-buttons
-          button.form-button.btn.btn-border(type="submit") Send
+          button#sendform.form-button.btn.btn-border(
+            type="submit",
+            v-on:submit.prevent()
+          ) Send
 </template>
+<script>
+export default {
+  el: "#sendform",
+  data: {
+    text: "",
+    email: "",
+    subject: "",
+    message: "",
+  },
+  methods: {
+    send: () => {
+      console.log({ name: this.name, email: this.email, subject: this.subject, message: this.message, });
+    },
+  },
+};
+</script>
 
 <style lang="scss" scoped>
 @import "../../assets/scss/mixins/media.scss";
@@ -40,3 +64,7 @@ section#get-in-touch.section.section-six
   }
 }
 </style>
+
+function newFunction() {
+  return null
+}

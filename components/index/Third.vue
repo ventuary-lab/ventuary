@@ -1,13 +1,13 @@
 <template lang="pug">
-  section.section.section-third#tools
-    .container
-      h2.title.title-lg.title-bg Technology<br> and Tools we use
-      div.section-third-items
-        span.icon.icon-waves-2 Waves
-        span.icon.icon-ethereum Ethereum
-        span.icon.icon-reactjs ReactJS
-        span.icon.icon-solidity Solidity
-        span.icon.icon-ride Ride
+section#tools.section.section-third
+  .container
+    h2.title.title-lg.title-bg Technology<br> and Tools we use
+    .section-third-items
+      span.icon.icon-waves-2 Waves
+      span.icon.icon-ethereum Ethereum
+      span.icon.icon-reactjs ReactJS
+      span.icon.icon-solidity Solidity
+      span.icon.icon-ride Ride
 </template>
 
 <style lang="scss" scoped>
@@ -15,6 +15,7 @@
 @import "../../assets/scss/mixins/main.scss";
 
 .section {
+  display: none;
   &-third {
     margin-top: 80px;
 
