@@ -3,38 +3,39 @@ section#get-in-touch.section.section-six
   .container
     h2.title.title-lg Get in touch
     .form-block
-      form(method="post")
-        input.input(type="text", placeholder="Name", v-model="text")
-        input.input(type="email", placeholder="Email", v-model="email")
-        input.input(type="text", placeholder="Subject", v-model="subject")
+      form(v-on:submit.prevent="submitMain")
+        input.input(type="text", placeholder="Name", v-model="user.text")
+        input.input(type="email", placeholder="Email", v-model="user.email")
+        input.input(type="text", placeholder="Subject", v-model="user.subject")
         textarea.textarea(
           cols="10",
           rows="1",
           placeholder="Message",
-          v-model="message"
+          v-model="user.message"
         )
         .form-block-buttons
-          button#sendform.form-button.btn.btn-border(
-            type="submit",
-            v-on:submit.prevent()
-          ) Send
+          button.form-button.btn.btn-border(type="submit") Send
 </template>
 <script>
 export default {
-  el: "#sendform",
-  data: {
-    text: "",
-    email: "",
-    subject: "",
-    message: "",
+  data() {
+    return {
+      user: {
+        text: "",
+        email: "",
+        subject: "",
+        message: "",
+      },
+    };
   },
   methods: {
-    send: () => {
-      console.log({ name: this.name, email: this.email, subject: this.subject, message: this.message, });
+    submitMain() {
+      //
     },
   },
 };
 </script>
+
 
 <style lang="scss" scoped>
 @import "../../assets/scss/mixins/media.scss";

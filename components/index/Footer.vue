@@ -7,27 +7,33 @@ footer
     .footer-menu
       .footer-menu-item
         span.footer-menu-title Products
-        a.link(href="https://gravityhub.org") Gravity
+        a.link(href="https://gravityhub.org", target="_blank") Gravity
         a.link(
+          target="_blank",
           href="https://medium.com/gravity-protocol/susy-a-blockchain-agnostic-cross-chain-asset-transfer-gateway-protocol-based-on-gravity-9d5b1550e5f4"
         ) SuSy
-        a.link(href="https://neutrino.at") Neutrino
+        a.link(href="https://neutrino.at", target="_blank") Neutrino
         //a.link(href="https://beta.ventuary.space") Ventuary-DAO
-        a.link(href="https://stepik.org/course/54415/promo#toc") Mastering Web 3.0
-      .footer-menu-item
+        a.link(
+          href="https://stepik.org/course/54415/promo#toc",
+          target="_blank"
+        ) Mastering Web 3.0
+      .footer-menu-item 
         span.footer-menu-title Company
-        a.link(href="https://medium.com/@Venlab.dev") About
-        a.link(href="/") Research
-        a.link(href="/") Contacts
-        a.link(href="/") Products
+        a.link(href="https://medium.com/@Venlab.dev", target="_blank") About
+        a.link(
+          href="https://arxiv.org/search/?searchtype=author&query=Pupyshev%2C+A"
+        ) Research
+        a.link(href="#what-we-do") Contacts
+        a.link(href="#products") Products
       .footer-menu-item
         span.footer-menu-title News
-        a.link(href="https://medium.com/@Venlab.dev") Blog
+        a.link(href="https://medium.com/@Venlab.dev", target="_blank") Blog
         //a.link(href="/") Brand Assets
       .footer-menu-item
         span.footer-menu-title Developers
         //a.link(href="/") Whitepapers
-        a.link(href="https://github.com/ventuary-lab") GitHub
+        a.link(href="https://github.com/ventuary-lab", target="_blank") GitHub
     .footer-links
       .lang.page-lang
         .page-lang-select
@@ -44,18 +50,29 @@ footer
             ) {{ lng['title'] }}
       .footer-social-links
         a.link-icon.icon.icon-facebook(
-          href="https://www.facebook.com/@Venlab.dev"
+          href="https://www.facebook.com/Venlab.dev",
+          target="_blank"
         )
-        a.link-icon.icon.icon-medium(href="https://medium.com/@Venlab.dev")
-        a.link-icon.icon.icon-twitter(href="https://twitter.com/VenlabDev")
+        a.link-icon.icon.icon-medium(
+          href="https://medium.com/@Venlab.dev",
+          target="_blank"
+        )
+        a.link-icon.icon.icon-twitter(
+          href="https://twitter.com/VenlabDev",
+          target="_blank"
+        )
         a.link-icon.icon.icon-linkedin(
-          href="https://www.linkedin.com/company/venlab-dev"
+          href="https://www.linkedin.com/company/venlab-dev",
+          target="_blank"
         )
         //a.link-icon.icon.icon-youtube(
           href="https://www.youtube.com/channel/UCEaZKrRGp0TmTWZN9OOJuzw")
         //a.link-icon.icon.icon-discord(href="https://discord.gg/nzghQ3")
         //a.link-icon.icon.icon-reddit(href="/")
-        a.link-icon.icon.icon-github(href="https://github.com/ventuary-lab")
+        a.link-icon.icon.icon-github(
+          href="https://github.com/ventuary-lab",
+          target="_blank"
+        )
     p.text.copyrate ©2019 Ventuary Lab Corporation Inc. All rights reserved.
 </template>
 
