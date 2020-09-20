@@ -73,7 +73,7 @@ footer
           href="https://github.com/ventuary-lab",
           target="_blank"
         )
-    p.text.copyrate ©2019 Ventuary Lab Corporation Inc. All rights reserved.
+    p.text.copyrate ©2019 Ventuary Lab
 </template>
 
 <script>
