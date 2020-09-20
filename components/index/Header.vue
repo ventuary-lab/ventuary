@@ -14,10 +14,22 @@ header(v-bind:class="{ 'header-fixed': fixHeader }")
         :duration="800",
         bezier-easing-value=".5,0,.35,1"
       )
-        a.link.header-menu-link.scrollactive-item(href="#what-we-do") company
-        a.link.header-menu-link.scrollactive-item(href="#products") products
-        a.link.header-menu-link.scrollactive-item(href="#news") news
-        a.link.header-menu-link.scrollactive-item(href="#get-in-touch") contacts
+        a.link.header-menu-link.scrollactive-item(
+          href="#what-we-do",
+          v-on:click="menuOpen = false"
+        ) company
+        a.link.header-menu-link.scrollactive-item(
+          href="#products",
+          v-on:click="menuOpen = false"
+        ) products
+        a.link.header-menu-link.scrollactive-item(
+          href="#news",
+          v-on:click="menuOpen = false"
+        ) news
+        a.link.header-menu-link.scrollactive-item(
+          href="#get-in-touch",
+          v-on:click="menuOpen = false"
+        ) contacts
       .lang.page-lang
         .page-lang-select
           span.icon.link.page-lang-selected(
