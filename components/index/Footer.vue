@@ -7,13 +7,11 @@ footer
     .footer-menu
       .footer-menu-item
         span.footer-menu-title Products
-        a.link(href="https://gravityhub.org", target="_blank") Gravity
-        a.link(
-          target="_blank",
-          href="https://medium.com/gravity-protocol/susy-a-blockchain-agnostic-cross-chain-asset-transfer-gateway-protocol-based-on-gravity-9d5b1550e5f4"
-        ) SuSy
-        a.link(href="https://neutrino.at", target="_blank") Neutrino
+        a.link(href="https://gravityhub.org", target="_blank") Gravity Protocol
+        a.link(href="https://neutrino.at", target="_blank") Neutrino Protocol
         //a.link(href="https://beta.ventuary.space") Ventuary-DAO
+        a.link(href="https://nampi.one/", target="_blank") Nampi AI
+        a.link(href="https://graviton.one/", target="_blank") Graviton
         a.link(
           href="https://stepik.org/course/54415/promo#toc",
           target="_blank"
