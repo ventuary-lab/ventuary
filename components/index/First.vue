@@ -84,7 +84,8 @@ section#what-we-do.section.section-first
             url("~static/img/innovation_pic.svg") no-repeat center/40%;
 
           @include b(tablet) {
-            background: url("~static/img/technology.svg") no-repeat left/contain;
+            background: url("~static/img/innovation_pic.svg") no-repeat
+              left/contain;
           }
         }
       }
