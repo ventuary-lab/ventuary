@@ -3,14 +3,15 @@ section.section.section-four
   #news.container
     a.link.title.title-lg.title-bg.icon.icon-circle-arrow-gray(
       href="https://medium.com/@Venlab.dev",
-      target="_blank"
+      target="_blank",
+      style="font-size: 33px;"
     ) News
     .section-four-items
       .section-four-item
         .section-four-item-center
           img.item-news(src="img/susy.png")
-          span.title.title-text SuSy: a blockchain-agnostic cross-chain assets transfer gateway...
-          p.text Keywords: oracles, cross-chain, interoperability, interchain transfers, gravity&nbsp;protocol.
+          span.title.title-text SuSy: a blockchain-agnostic cross-chain assets transfer gateway…
+          p.text Keywords: oracles, cross-chain, interoperability, interchain transfers, gravity&nbsp;protocol…
         a.link(
           href="https://medium.com/gravity-protocol/susy-a-blockchain-agnostic-cross-chain-asset-transfer-gateway-protocol-based-on-gravity-9d5b1550e5f4",
           target="_blank"
@@ -19,8 +20,7 @@ section.section.section-four
         .section-four-item-center
           img.item-news(src="img/1inch.png")
           span.title.title-text 1inch joins Gravity Network as interchain transfer provider for Ethereum ecosystem
-          p.text We are excited to announce a collaboration between the Gravity protocol and 1inch, a DEX aggregator focused on the most seamless&nbsp;user…
-          span
+          p.text We are excited to announce a collaboration between the Gravity protocol and 1inch…
         a.link(
           href="https://medium.com/gravity-protocol/1inch-joins-gravity-network-as-interchain-transfer-provider-for-ethereum-ecosystem-386bd80e746b",
           target="_blank"
@@ -29,7 +29,7 @@ section.section.section-four
         .section-four-item-center
           img.item-news(src="img/Neutrino & Band.png")
           span.title.title-text Neutrino Integrates Band Protocol’s Oracle To Secure Stablecoin Protocol
-          p.text Neutrino and Band Protocol have collaborated on creating a secure oracle and independent emergency system to the algorithmic stablecoin...
+          p.text Neutrino and Band Protocol have collaborated on creating a secure oracle and independent…
         a.link(
           target="_blank",
           href="https://medium.com/neutrinoteam/neutrino-integrates-band-protocols-oracle-to-secure-stablecoin-protocol-a1aebf68f728"
@@ -42,13 +42,13 @@ section.section.section-four
 .section {
   &-four {
     margin-top: 80px;
-
     @include b(mobile) {
       margin-top: 0px;
     }
     .container {
       max-width: 1100px;
       .title {
+        line-height: 17px;
         font-size: 14px;
         &-lg {
           margin-bottom: 80px;
@@ -71,7 +71,7 @@ section.section.section-four
       flex-wrap: wrap;
       border-radius: 5px;
       border: 1px solid #2b292c;
-      padding: 50px 30px 40px 30px;
+      padding: 30px 30px 30px 30px;
       max-width: 333px;
       width: 100%;
       min-height: 340px;
@@ -95,6 +95,7 @@ section.section.section-four
       .text,
       .title {
         width: 100%;
+        margin-bottom: 10px;
       }
       &-center {
         width: 100%;
@@ -110,12 +111,14 @@ section.section.section-four
         width: max-content;
         text-decoration: underline;
         text-align: end;
+        margin-top: 10px;
         @include rem(14);
       }
       .item-news {
         width: 309px;
         height: 150px;
         border-radius: 5px;
+        margin-bottom: 15px;
       }
     }
   }
