@@ -1,5 +1,5 @@
-export const mainTitle = 'Ventuary Lab'
-const previewImagePath = 'https://venlab.dev/img/preview/Vlab_preview@2x.png'
+export const mainTitle = 'Ventuary Lab';
+const previewImagePath = 'https://venlab.dev/img/preview/Vlab_preview@1x.png';
 
 export const shortDescription = 'Decentralization matter';
 const longDescription = `
@@ -40,11 +40,11 @@ export const metaTags = [
    },
    {
       property: 'twitter:image',
-      content: previewImagePath
+      content: previewImagePath,
    },
    {
       property: 'twitter:image:src',
-      content: previewImagePath
+      content: previewImagePath,
    },
    {
       property: 'twitter:card',
