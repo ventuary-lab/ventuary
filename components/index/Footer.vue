@@ -176,7 +176,6 @@ footer {
 
       @include b(mobile) {
         display: flex;
-        //grid-template-columns: repeat(4, 30px);
         justify-content: space-between;
       }
     }
