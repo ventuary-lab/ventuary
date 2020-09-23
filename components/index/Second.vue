@@ -130,11 +130,10 @@ section#products.section.section-second
 
       &:nth-child(4) {
         .section-second-item-img {
-          background: url("~static/img/nampi_news@2x.png") no-repeat
-            center/contain;
-
+          background: url("~static/img/nampi_news@2x.png");
+          background-size: contain;
           @include b(tablet) {
-            background: url("~static/img/nampi_news@2x.png") no-repeat
+            background: url("~static/img/nampi-mob.png") no-repeat
               center/contain;
           }
         }
@@ -142,11 +141,10 @@ section#products.section.section-second
 
       &:nth-child(5) {
         .section-second-item-img {
-          background: url("~static/img/Graviton_preview@1x.png") no-repeat
-            center/contain;
-
+          background: url("~static/img/Graviton_preview@1x.png");
+          background-size: contain;
           @include b(tablet) {
-            background: url("~static/img/Graviton_preview@1x.png") no-repeat
+            background: url("~static/img/graviton-mob.png") no-repeat
               center/contain;
           }
         }
