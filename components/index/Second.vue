@@ -1,7 +1,7 @@
 <template lang="pug">
 section#products.section.section-second
   .container
-    h2.title.title-lg.title-bg Products
+    h2.title.title-lg.title-bg product
     .section-second-item.item-duo
       .section-second-item-img
       .section-second-item-info

@@ -33,19 +33,7 @@ footer
         //a.link(href="/") Whitepapers
         a.link(href="https://github.com/ventuary-lab", target="_blank") GitHub
     .footer-links
-      .lang.page-lang
-        .page-lang-select
-          span.icon.link.page-lang-selected(
-            v-on:click="openedLngList = !openedLngList",
-            v-bind:class="[{ opened: openedLngList }, 'icon-' + currLanguage.symbol]"
-          ) {{ currLanguage.title }}
-          .page-lang-select-list(v-if="openedLngList")
-            span.icon.link.page-lang-select-list-title(
-              v-for="lng in languagesList",
-              v-if="!lng['active']",
-              v-on:click="setLanguage(lng)",
-              :class="'icon-' + lng['lng']"
-            ) {{ lng['title'] }}
+      p.text.copyrate ©2019 Ventuary Lab
       .footer-social-links
         a.link-icon.icon.icon-facebook(
           href="https://www.facebook.com/Venlab.dev",
@@ -71,7 +59,6 @@ footer
           href="https://github.com/ventuary-lab",
           target="_blank"
         )
-    p.text.copyrate ©2019 Ventuary Lab
 </template>
 
 <script>
@@ -124,8 +111,6 @@ export default {
 @import "../../assets/scss/mixins/image.scss";
 
 footer {
-  margin-bottom: 50px;
-
   .container {
     max-width: var(--container-max-width);
     padding: 50px 70px;
@@ -165,9 +150,9 @@ footer {
 
     .copyrate {
       @include rem(10);
-      margin-top: 55px;
       font-family: "Syncopate", sans-serif;
       opacity: 0.6;
+      width: 100%;
     }
   }
 
@@ -190,16 +175,15 @@ footer {
       flex-wrap: wrap;
 
       @include b(mobile) {
-        display: grid;
-        grid-template-columns: repeat(4, 30px);
+        display: flex;
+        //grid-template-columns: repeat(4, 30px);
         justify-content: space-between;
-        grid-gap: 40px;
       }
     }
 
     &-links {
       margin-top: 50px;
-      display: grid;
+      display: flex;
       grid-template-columns: 95px minmax(320px, 700px);
       grid-gap: 20px;
       justify-content: space-between;
@@ -208,6 +192,7 @@ footer {
       @include b(mobile) {
         display: flex;
         width: 100%;
+        flex-direction: column-reverse;
       }
 
       .page-lang {
