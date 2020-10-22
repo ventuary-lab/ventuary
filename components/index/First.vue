@@ -21,7 +21,7 @@ section#what-we-do.section.section-first
       .section-first-item-img
       .section-first-item-info
         span.title.title-text Deployment <br>and Maintenance
-        p.text Our open-source products are designed to sustain high loads, with a focus on ease-of-use and flexibility or developers and end users.
+        p.text Our open-source products are designed to sustain high loads, with a focus on ease-of-use and flexibility for developers and end users.
 </template>
 
 <style lang="scss" scoped>
