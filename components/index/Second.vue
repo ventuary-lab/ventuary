@@ -141,10 +141,10 @@ section#products.section.section-second
 
       &:nth-child(5) {
         .section-second-item-img {
-          background: url("~static/img/Graviton_preview@1x.png");
+          background: url("~static/img/graviton.png");
           background-size: contain;
           @include b(tablet) {
-            background: url("~static/img/graviton-mob.png") no-repeat
+            background: url("~static/img/gravitonM.png") no-repeat
               center/contain;
           }
         }
