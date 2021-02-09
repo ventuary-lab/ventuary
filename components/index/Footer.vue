@@ -35,20 +35,12 @@ footer
     .footer-links
       p.text.copyrate ©2019 Ventuary Lab
       .footer-social-links
-        a.link-icon.icon.icon-facebook(
-          href="https://www.facebook.com/Venlab.dev",
-          target="_blank"
-        )
         a.link-icon.icon.icon-medium(
-          href="https://medium.com/@Venlab.dev",
+          href="https://alexpupyshev.medium.com/",
           target="_blank"
         )
         a.link-icon.icon.icon-twitter(
-          href="https://twitter.com/VenlabDev",
-          target="_blank"
-        )
-        a.link-icon.icon.icon-linkedin(
-          href="https://www.linkedin.com/company/venlab-dev",
+          href="https://twitter.com/alekseipupyshev",
           target="_blank"
         )
         //a.link-icon.icon.icon-youtube(
@@ -152,7 +144,7 @@ footer {
       @include rem(10);
       font-family: "Syncopate", sans-serif;
       opacity: 0.6;
-      width: 100%;
+      width: 250%;
     }
   }
 
