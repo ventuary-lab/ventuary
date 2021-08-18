@@ -21,15 +21,8 @@ section#products.section.section-second
         ) Neutrino Protocol
         p.text Neutrino Protocol is an algorithmic price-stable cryptocurrency protocol backed by Waves Platform’s native token.
         p.text The Protocol allows for the creation of stablecoins tied to a specific real world asset, such as national currency or commodity. The first synthetic asset created with Neutrino Protocol is USD Neutrino (USDN).
+
     .section-second-item
-      .section-second-item-img
-      .section-second-item-info
-        a.link.title.title-text.icon.icon-circle-arrow-green(
-          href="https://nampi.one/",
-          target="_blank"
-        ) Nampi AI
-        p.text Nampi is a crowdsourcing marketplace that makes it easier for individuals and businesses to outsource their processes and jobs to a distributed workforce who can perform these tasks virtually.
-    .section-second-item.item-reverce
       .section-second-item-img
       .section-second-item-info
         a.link.title.title-text.icon.icon-circle-arrow-aqua(
@@ -130,17 +123,6 @@ section#products.section.section-second
 
       &:nth-child(4) {
         .section-second-item-img {
-          background: url("~static/img/nampi_news@2x.png");
-          background-size: contain;
-          @include b(tablet) {
-            background: url("~static/img/nampi-mob.png") no-repeat
-              center/contain;
-          }
-        }
-      }
-
-      &:nth-child(5) {
-        .section-second-item-img {
           background: url("~static/img/graviton.png");
           background-size: contain;
           @include b(tablet) {
@@ -150,7 +132,7 @@ section#products.section.section-second
         }
       }
 
-      &:nth-child(6) {
+      &:nth-child(5) {
         @include b(tablet) {
           margin-bottom: 0px;
         }
