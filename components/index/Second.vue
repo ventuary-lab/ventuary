@@ -126,7 +126,7 @@ section#products.section.section-second
           background: url("~static/img/graviton.png");
           background-size: contain;
           @include b(tablet) {
-            background: url("~static/img/gravitonM.png") no-repeat
+            background: url("~static/img/graviton.png") no-repeat
               center/contain;
           }
         }
