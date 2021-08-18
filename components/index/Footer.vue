@@ -33,7 +33,7 @@ footer
         //a.link(href="/") Whitepapers
         a.link(href="https://github.com/ventuary-lab", target="_blank") GitHub
     .footer-links
-      p.text.copyrate ©2019 Ventuary Lab
+      p.text.copyrate ©2021 Ventuary Lab
       .footer-social-links
         a.link-icon.icon.icon-medium(
           href="https://alexpupyshev.medium.com/",
