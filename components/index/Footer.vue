@@ -7,10 +7,8 @@ footer
     .footer-menu
       .footer-menu-item
         span.footer-menu-title Products
-        a.link(href="https://gravityhub.org", target="_blank") Gravity Protocol
         a.link(href="https://neutrino.at", target="_blank") Neutrino Protocol
         //a.link(href="https://beta.ventuary.space") Ventuary-DAO
-        a.link(href="https://nampi.one/", target="_blank") Nampi AI
         a.link(href="https://graviton.one/", target="_blank") Graviton
         a.link(
           href="https://stepik.org/course/54415/promo#toc",
@@ -25,15 +23,11 @@ footer
         a.link(href="#what-we-do") Contacts
         a.link(href="#products") Products
       .footer-menu-item
-        span.footer-menu-title News
-        a.link(href="https://medium.com/@Venlab.dev", target="_blank") Blog
-        //a.link(href="/") Brand Assets
-      .footer-menu-item
         span.footer-menu-title Developers
         //a.link(href="/") Whitepapers
         a.link(href="https://github.com/ventuary-lab", target="_blank") GitHub
     .footer-links
-      p.text.copyrate ©2019 Ventuary Lab
+      p.text.copyrate ©2021 Ventuary Lab
       .footer-social-links
         a.link-icon.icon.icon-medium(
           href="https://alexpupyshev.medium.com/",
@@ -55,34 +49,34 @@ footer
 
 <script>
 export default {
-  data: function () {
+  data: function() {
     return {
       currLanguage: {
         title: "Eng",
-        symbol: "en",
+        symbol: "en"
       },
       openedLngList: false,
       languagesList: [
         {
           lng: "en",
           title: "Eng",
-          active: true,
+          active: true
         },
         {
           lng: "ru",
           title: "Rus",
-          active: false,
-        },
-      ],
+          active: false
+        }
+      ]
     };
   },
   methods: {
-    setLanguage: function (event) {
+    setLanguage: function(event) {
       this.currLanguage.title = event["title"];
       this.currLanguage.symbol = event["lng"];
       this.openedLngList = false;
 
-      this.languagesList.map((lang) => {
+      this.languagesList.map(lang => {
         if (lang["lng"] === event["lng"]) {
           lang["active"] = true;
         } else {
@@ -92,8 +86,8 @@ export default {
       this.languagesList.sort((a, b) => {
         return b.active ? 1 : -1;
       });
-    },
-  },
+    }
+  }
 };
 </script>
 
@@ -200,6 +194,8 @@ footer {
 
     &-menu {
       display: flex;
+      max-width: 50%;
+      width: 100%;
       margin-top: 60px;
       justify-content: space-between;
       @include rem(12);

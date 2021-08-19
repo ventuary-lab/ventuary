@@ -9,30 +9,30 @@ section.section.section-four
     .section-four-items
       .section-four-item
         .section-four-item-center
-          img.item-news(src="img/susy.png")
-          span.title.title-text SuSy: a blockchain-agnostic cross-chain assets transfer gateway…
-          p.text Keywords: oracles, cross-chain, interoperability, interchain transfers, gravity&nbsp;protocol…
+          img.item-news(src="img/news/gton-any.png")
+          span.title.title-text Anyswap partners with Graviton to expand its cross-chain market offering
+          p.text Mutual support between the two projects in pursuit of enhancing cross-chain experience and liquidity on Anyswap will be the main focus of…
         a.link(
-          href="https://medium.com/gravity-protocol/susy-a-blockchain-agnostic-cross-chain-asset-transfer-gateway-protocol-based-on-gravity-9d5b1550e5f4",
+          href="https://medium.com/graviton-one/anyswap-partners-with-graviton-to-expand-its-cross-chain-market-offering-1bc31bd020d3",
           target="_blank"
         ) See more
       .section-four-item
         .section-four-item-center
-          img.item-news(src="img/1inch.png")
-          span.title.title-text 1inch joins Gravity Network as interchain transfer provider for Ethereum ecosystem
-          p.text We are excited to announce a collaboration between the Gravity protocol and 1inch…
+          img.item-news(src="img/news/solanoid-news.png")
+          span.title.title-text SuSy releases Solanoid, a testing framework for Solana Programs
+          p.text This guide shows you how to use the Solanoid SDK to test the apps built on the Solana blockchain. <br /><br /> <br />
         a.link(
-          href="https://medium.com/gravity-protocol/1inch-joins-gravity-network-as-interchain-transfer-provider-for-ethereum-ecosystem-386bd80e746b",
+          href="https://medium.com/@OneSusy/susy-releases-solanoid-a-testing-framework-for-solana-programs-38c6fe7db91a",
           target="_blank"
         ) See more
       .section-four-item
         .section-four-item-center
-          img.item-news(src="img/Neutrino & Band.png")
-          span.title.title-text Neutrino Integrates Band Protocol’s Oracle To Secure Stablecoin Protocol
-          p.text Neutrino and Band Protocol have collaborated on creating a secure oracle and independent…
+          img.item-news(src="img/news/gton-ergo.png")
+          span.title.title-text Ergo and Graviton partner up to foster multichain expansion of the two ecosystems
+          p.text The two projects are teaming up for enhancing cross-chain experience, providing wider liquidity mining opportunities and expanding the…
         a.link(
           target="_blank",
-          href="https://medium.com/neutrinoteam/neutrino-integrates-band-protocols-oracle-to-secure-stablecoin-protocol-a1aebf68f728"
+          href="https://medium.com/graviton-one/ergo-and-graviton-partner-up-to-foster-multichain-expansion-of-the-two-ecosystems-48cbcf6c8048"
         ) See more
 </template>
 
